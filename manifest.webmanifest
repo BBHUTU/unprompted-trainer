@@ -1,0 +1,25 @@
+{
+  "id": "unprompted-cn",
+  "name": "Unprompted · 即兴演讲练习",
+  "short_name": "即兴",
+  "description": "抽一个有分量的题目，然后开口讲 —— 即兴开讲或深度研究，练的就是临场思考。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#121816",
+  "theme_color": "#121816",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "即兴开讲", "short_name": "即兴", "url": "./?mode=off-the-cuff" },
+    { "name": "深度研究", "short_name": "深研", "url": "./?mode=deep-research" }
+  ]
+}
