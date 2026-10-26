@@ -1,0 +1,3741 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="抽一个有分量的题目，然后开口讲 —— 即兴开讲或深度研究，练的就是临场思考。" />
+    <meta name="theme-color" content="#121816" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="canonical" href="https://bbhutu.github.io/unprompted-trainer/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Unprompted · 即兴演讲练习" />
+    <meta property="og:description" content="抽一个有分量的题目，然后开口讲 —— 即兴开讲或深度研究，练的就是临场思考。" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Unprompted · 即兴演讲练习" />
+    <meta property="og:image" content="https://workbuddy-space-static.codebuddy.work/image/ADBoMj9B87DAaXl2WGwcHL.png" />
+
+    <!-- PWA / 加到主屏幕（图标用公网直链，整站只有 index.html 一个文件） -->
+    <meta name="application-name" content="即兴" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="即兴" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="https://workbuddy-space-static.codebuddy.work/image/IiyC0DPh7Xv3w0aMYbPF4V.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="https://workbuddy-space-static.codebuddy.work/image/IiyC0DPh7Xv3w0aMYbPF4V.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="https://workbuddy-space-static.codebuddy.work/image/LCliAm9XviUVMULcLZAE2o.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- 字体异步加载：网络不畅时不阻塞渲染，直接用系统字体 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <title>Unprompted · 即兴演讲练习</title>
+    <style>
+:root{
+  --font-display:"Fraunces","Noto Serif SC","Songti SC","STSong",Georgia,serif;
+  --font-body:"Outfit","PingFang SC","Microsoft YaHei","Avenir Next","Segoe UI",sans-serif;
+  --ink:#f4e8d6;
+  --muted:#f4e8d6ad;
+  --accent:#c47a4a;
+  --accent-bright:#e0925c;
+  --research:#6fc3d8;
+  --scroll-track:#121816;
+  --scroll-thumb:#f4e8d638;
+  --scroll-thumb-hover:#c47a4a8c;
+  color:var(--ink);
+  color-scheme:dark;
+  font-family:var(--font-body);
+  font-synthesis:none;
+  text-rendering:optimizelegibility;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+*,:before,:after{box-sizing:border-box}
+html,body,#root{min-height:100%;margin:0}
+body{background:#121816}
+*{scrollbar-width:thin;scrollbar-color:var(--scroll-thumb) var(--scroll-track)}
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-track{background:var(--scroll-track);border-radius:999px}
+::-webkit-scrollbar-thumb{background:var(--scroll-thumb);border:2px solid var(--scroll-track);background-clip:padding-box;border-radius:999px}
+::-webkit-scrollbar-thumb:hover{background:var(--scroll-thumb-hover);border:2px solid var(--scroll-track);background-clip:padding-box}
+::-webkit-scrollbar-corner{background:var(--scroll-track)}
+
+.page{min-height:100svh;padding:max(1rem, env(safe-area-inset-top,0px)) max(1rem, env(safe-area-inset-right,0px)) max(2.5rem, env(safe-area-inset-bottom,0px)) max(1rem, env(safe-area-inset-left,0px));flex-direction:column;justify-content:flex-start;align-items:center;display:flex;position:relative;overflow:hidden auto}
+.atmosphere{z-index:-1;background:radial-gradient(90% 70% at 15% 10%,#c47a4a47,#0000 55%),radial-gradient(70% 60% at 85% 20%,#2e6b5e59,#0000 50%),radial-gradient(80% 50% at 50% 100%,#1c3a488c,#0000 60%),linear-gradient(165deg,#1a2420 0%,#121816 45%,#0e1418 100%);position:fixed;inset:0}
+.atmosphere:after{content:"";opacity:.45;pointer-events:none;mix-blend-mode:soft-light;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");position:absolute;inset:0}
+
+.brand{text-align:center;margin-bottom:clamp(3.25rem,9vh,5.5rem);animation:.9s cubic-bezier(.22,1,.36,1) both rise}
+.brand-mark{font-family:var(--font-display);letter-spacing:-.03em;color:var(--ink);margin:0;font-size:clamp(1.65rem,4.5vw,2.15rem);font-weight:500;line-height:1}
+.brand-line{font-family:var(--font-body);letter-spacing:.01em;color:var(--muted);margin:.3rem 0 0;font-size:clamp(.82rem,1.6vw,.95rem);font-weight:400}
+.brand-sub{font-family:var(--font-body);letter-spacing:.18em;color:var(--accent);margin:.55rem 0 0;font-size:.7rem;font-weight:600;text-transform:uppercase}
+.brand-link{appearance:none;vertical-align:middle;color:var(--ink);font:inherit;letter-spacing:inherit;cursor:pointer;background:#f4e8d60f;border:none;border-radius:999px;align-items:center;gap:.35rem;margin:0 0 0 .15rem;padding:.28rem .7rem .28rem .5rem;font-weight:500;text-decoration:none;transition:color .2s,background .2s,box-shadow .2s;display:inline-flex;box-shadow:inset 0 0 0 1px #f4e8d62e}
+.brand-link:hover{color:var(--ink);background:#c47a4a24;box-shadow:inset 0 0 0 1px #c47a4a8c}
+.brand-link:focus-visible{outline:2px solid var(--accent-bright);outline-offset:3px}
+.brand-link-icon{fill:none;stroke:currentColor;stroke-width:1.7px;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;width:.95rem;height:.95rem}
+
+.stage{text-align:center;flex-direction:column;flex:1;justify-content:flex-start;align-items:center;gap:clamp(1.5rem,4vw,2.25rem);width:min(720px,100%);animation:1s cubic-bezier(.22,1,.36,1) .12s both rise;display:flex}
+.stage-body{flex-direction:column;align-items:center;gap:clamp(1.5rem,4vw,2.25rem);width:100%;display:flex}
+.controls{flex-direction:column;align-items:center;gap:.7rem;width:100%;display:flex}
+
+.mode-switch{background:#f4e8d60d;border-radius:999px;padding:.25rem;display:flex;position:relative;box-shadow:inset 0 0 0 1px #f4e8d62e}
+.mode-switch.is-disabled{opacity:.45}
+.mode-thumb{width:calc(50% - .25rem);transform:translateX(calc(var(--i,0) * 100%));background:#c47a4ae6;border-radius:999px;transition:transform .28s cubic-bezier(.22,1,.36,1);position:absolute;top:.25rem;bottom:.25rem;left:.25rem;box-shadow:0 6px 18px #c47a4a40}
+.mode-option{z-index:1;appearance:none;white-space:nowrap;cursor:pointer;color:var(--muted);font-family:var(--font-body);letter-spacing:.01em;background:0 0;border:none;border-radius:999px;flex:1;justify-content:center;align-items:center;gap:.45rem;padding:.6rem 1.05rem;font-size:.92rem;font-weight:600;transition:color .2s;display:flex;position:relative}
+.mode-option:disabled{cursor:not-allowed}
+.mode-option.is-active{color:#1a1612}
+.mode-option:focus-visible{outline:2px solid var(--accent-bright);outline-offset:2px}
+.mode-emoji{font-size:1rem;line-height:1}
+.mode-blurb{max-width:42ch;font-family:var(--font-body);color:var(--muted);margin:0;font-size:.85rem;line-height:1.45}
+
+.settings{z-index:6;position:relative}
+.settings-trigger{appearance:none;cursor:pointer;width:2.55rem;height:2.55rem;color:var(--muted);background:#f4e8d60d;border:none;border-radius:999px;place-items:center;padding:0;transition:color .2s,background .2s,box-shadow .2s;display:grid;position:relative;box-shadow:inset 0 0 0 1px #f4e8d62e}
+.settings-trigger:disabled{opacity:.45;cursor:not-allowed}
+.settings-trigger:not(:disabled):hover,.settings.is-open .settings-trigger{color:var(--ink);background:#c47a4a1a;box-shadow:inset 0 0 0 1px #c47a4a80}
+.settings-trigger:focus-visible{outline:2px solid var(--accent-bright);outline-offset:2px}
+.settings-trigger svg{fill:none;stroke:currentColor;stroke-width:1.55px;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;width:1.15rem;height:1.15rem}
+
+.settings-overlay{z-index:40;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);background:radial-gradient(70% 55% at 50% 45%,#c47a4a1a,#0000 60%),radial-gradient(90% 80% at 50% 100%,#1c3a4847,#0000 55%),#0a0e0d8c;place-items:center;padding:clamp(1rem,4vw,2rem);animation:.35s cubic-bezier(.22,1,.36,1) both overlay-in;display:grid;position:fixed;inset:0}
+.settings-panel{z-index:1;text-align:left;background:#161c1a;border-radius:1.25rem;width:min(420px,100%);padding:1.35rem 1.4rem 1.25rem;animation:.4s cubic-bezier(.22,1,.36,1) both rise;position:relative;box-shadow:inset 0 0 0 1px #f4e8d61f,0 24px 60px #0000008c;max-height:calc(100vh - 2rem);max-height:calc(100dvh - 2rem);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.settings-panel-head{margin-bottom:1.15rem}
+.panel-title-row{display:flex;align-items:center;gap:.6rem}
+.panel-back{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:2.1rem;height:2.1rem;border:0;border-radius:50%;background:#f4e8d612;color:var(--ink);font-size:1.05rem;line-height:1;cursor:pointer;box-shadow:inset 0 0 0 1px #f4e8d624;padding:0}
+.panel-back:hover{background:#f4e8d622}
+.panel-head-spacer{flex:1 1 auto}
+.settings-panel-title{font-family:var(--font-display);letter-spacing:-.03em;color:var(--ink);margin:0;font-size:1.55rem;font-weight:500}
+.settings-panel-blurb{font-family:var(--font-body);color:var(--muted);margin:.35rem 0 0;font-size:.88rem}
+.duration-field+.duration-field{margin-top:1.25rem}
+.duration-head{justify-content:space-between;align-items:baseline;gap:.75rem;margin-bottom:.65rem;display:flex}
+.duration-label{font-family:var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-size:.75rem;font-weight:650}
+.duration-value{font-family:var(--font-display);letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums;font-size:1.15rem;font-weight:500}
+.duration-slider{appearance:none;cursor:pointer;background:#f4e8d61f;border-radius:999px;outline:none;width:100%;height:.35rem;margin:0}
+.duration-slider::-webkit-slider-runnable-track{background:#f4e8d61f;border-radius:999px;height:.35rem}
+.duration-slider::-webkit-slider-thumb{appearance:none;background:var(--accent);cursor:pointer;border:none;border-radius:50%;width:1.15rem;height:1.15rem;margin-top:-.4rem;transition:background .15s,box-shadow .15s;box-shadow:0 0 0 4px #c47a4a2e}
+.duration-slider::-moz-range-track{background:#f4e8d61f;border-radius:999px;height:.35rem}
+.duration-slider::-moz-range-thumb{background:var(--accent);cursor:pointer;border:none;border-radius:50%;width:1.15rem;height:1.15rem;box-shadow:0 0 0 4px #c47a4a2e}
+.duration-slider:hover::-webkit-slider-thumb,.duration-slider:focus-visible::-webkit-slider-thumb{background:var(--accent-bright);box-shadow:0 0 0 5px #c47a4a47}
+.duration-slider:hover::-moz-range-thumb,.duration-slider:focus-visible::-moz-range-thumb{background:var(--accent-bright);box-shadow:0 0 0 5px #c47a4a47}
+.duration-slider:focus-visible{outline:none}
+.duration-ends{font-family:var(--font-body);color:var(--muted);justify-content:space-between;margin-top:.45rem;font-size:.72rem;display:flex}
+.duration-hint,.settings-note{font-family:var(--font-body);color:var(--muted);margin:.45rem 0 0;font-size:.78rem;line-height:1.4}
+.settings-note{border-top:1px solid #f4e8d61a;margin-top:1.1rem;padding-top:.7rem}
+.settings-mute{font-family:var(--font-body);color:var(--ink);align-items:center;gap:.65rem;margin-top:1.15rem;font-size:.92rem;display:flex}
+.settings-mute input{width:1.05rem;height:1.05rem;accent-color:var(--accent);cursor:pointer}
+.settings-mute label{cursor:pointer}
+.settings-done{justify-content:center;width:100%;margin-top:1rem}
+
+.niche-select{z-index:5;width:min(100%,280px);position:relative}
+.niche-trigger{appearance:none;cursor:pointer;width:100%;color:var(--ink);font-family:var(--font-body);letter-spacing:.01em;background:#f4e8d60d;border:none;border-radius:999px;align-items:center;gap:.65rem;padding:.7rem .95rem;font-size:.92rem;font-weight:550;transition:background .2s,box-shadow .2s,transform .2s;display:flex;position:relative;box-shadow:inset 0 0 0 1px #f4e8d62e}
+.niche-trigger:disabled{opacity:.45;cursor:not-allowed}
+.niche-trigger:not(:disabled):hover{background:#f4e8d614;box-shadow:inset 0 0 0 1px #f4e8d652}
+.niche-select.is-open .niche-trigger{background:#c47a4a14;box-shadow:inset 0 0 0 1px #c47a4a8c}
+.niche-emoji{text-align:center;flex-shrink:0;width:1.35rem;font-size:1.05rem;line-height:1}
+.niche-label{text-align:left;white-space:nowrap;text-overflow:ellipsis;flex:1;overflow:hidden}
+.niche-caret{border-left:5px solid #0000;border-right:5px solid #0000;border-top:6px solid var(--muted);width:0;height:0;margin-left:.15rem;transition:transform .2s}
+.niche-select.is-open .niche-caret{transform:rotate(180deg)}
+.niche-menu{scrollbar-color:#f4e8d638 #161c1a;background:#161c1a;border-radius:1rem;max-height:min(50vh,360px);margin:0;padding:.35rem;animation:.22s cubic-bezier(.22,1,.36,1) both menu-in;position:absolute;top:calc(100% + .45rem);left:0;right:0;overflow-y:auto;box-shadow:inset 0 0 0 1px #f4e8d61f,0 18px 40px #0000008c}
+.niche-menu::-webkit-scrollbar-track{background:#161c1a}
+.niche-menu::-webkit-scrollbar-thumb{border-color:#161c1a}
+.niche-option{color:var(--ink);cursor:pointer;-webkit-user-select:none;user-select:none;font-family:var(--font-body);text-align:left;background:0 0;border-radius:.7rem;align-items:center;gap:.65rem;padding:.65rem .75rem;font-size:.9rem;font-weight:500;transition:background .15s;display:flex}
+.niche-option:hover{background:#f4e8d612}
+.niche-option:focus-visible{outline:2px solid var(--accent-bright);outline-offset:-2px}
+.niche-option.is-active{color:var(--accent-bright);background:#c47a4a29}
+.niche-option+.niche-option{margin-top:.1rem}
+@keyframes menu-in{0%{opacity:0;transform:translateY(-6px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+.reel{flex-direction:column;justify-content:center;align-items:center;gap:.55rem;width:100%;min-height:clamp(10rem,26vw,14rem);display:flex}
+.reel-eyebrow{font-family:var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0;font-size:.72rem;font-weight:650}
+.reel-phrase{max-width:11em;font-family:var(--font-display);letter-spacing:-.02em;color:var(--ink);margin:0;font-size:clamp(2.6rem,8vw,4.4rem);font-weight:500;line-height:1.14}
+.reel.is-spinning .reel-phrase{opacity:.88;animation:80ms tick-flash}
+.reel.is-landed .reel-phrase{color:var(--ink);animation:.55s cubic-bezier(.22,1,.36,1) both topic-in}
+.sr-only{clip-path:inset(50%);white-space:nowrap;border:0;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}
+
+.actions,.actions-main{flex-wrap:wrap;justify-content:center;align-items:center;gap:.75rem;display:flex}
+.btn{appearance:none;cursor:pointer;font-family:var(--font-body);letter-spacing:.01em;border:none;border-radius:999px;padding:.9rem 1.35rem;font-size:.95rem;font-weight:600;transition:transform .2s,background .2s,color .2s,opacity .2s,box-shadow .2s}
+.btn:disabled{opacity:.4;cursor:not-allowed;transform:none}
+.btn:focus-visible{outline:2px solid var(--accent-bright);outline-offset:3px}
+.btn:not(:disabled):hover{transform:translateY(-1px)}
+.btn:not(:disabled):active{transform:translateY(1px)}
+.btn.primary{background:var(--accent);color:#1a1612;box-shadow:0 10px 28px #c47a4a47}
+.btn.primary:not(:disabled):hover{background:var(--accent-bright)}
+.btn.secondary{color:var(--ink);background:0 0;box-shadow:inset 0 0 0 1.5px #f4e8d647}
+.btn.secondary:not(:disabled):hover{background:#f4e8d60a;box-shadow:inset 0 0 0 1.5px #f4e8d68c}
+.btn.ghost{color:var(--muted);text-underline-offset:3px;background:0 0;border-radius:0;padding:.4rem .75rem;font-size:.85rem;font-weight:500;text-decoration:underline}
+
+.timer-overlay{z-index:20;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);background:radial-gradient(70% 55% at 50% 45%,#c47a4a29,#0000 60%),radial-gradient(90% 80% at 50% 100%,#1c3a4873,#0000 55%),#0a0e0df0;place-items:center;padding:1.5rem;animation:.55s cubic-bezier(.22,1,.36,1) both overlay-in;display:grid;position:fixed;inset:0}
+.timer-overlay-inner{text-align:center;flex-direction:column;align-items:center;gap:clamp(.85rem,2.5vh,1.5rem);width:min(920px,100%);max-height:100%;animation:.65s cubic-bezier(.22,1,.36,1) 80ms both rise;display:flex;overflow-y:auto}
+.timer-topic{font-family:var(--font-body);letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin:0;font-size:clamp(.85rem,2vw,1.05rem);font-weight:500}
+.timer-ring{--p:0;background:radial-gradient(circle at center, #141a17 62%, transparent 63%),conic-gradient(var(--accent) calc(var(--p) * 1turn), #f4e8d61f 0);border-radius:50%;place-items:center;width:min(62vw,52vh,380px);height:min(62vw,52vh,380px);transition:background .15s linear;display:grid}
+.timer-overlay.is-live .timer-digits{color:var(--accent-bright)}
+.timer-overlay.is-done .timer-ring{animation:.8s pulse-done}
+.timer-digits{font-family:var(--font-display);letter-spacing:-.03em;color:var(--ink);font-variant-numeric:tabular-nums;font-size:clamp(3.5rem,14vw,7rem);font-weight:500;line-height:1}
+.timer-status{font-family:var(--font-body);color:var(--muted);margin:0;font-size:clamp(1rem,2.5vw,1.25rem)}
+.timer-phase{font-family:var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:var(--research);margin:0;font-size:.72rem;font-weight:650}
+.timer-next{font-family:var(--font-body);color:var(--muted);margin:0;font-size:.9rem}
+.timer-actions{flex-wrap:wrap;justify-content:center;align-items:center;gap:.75rem;display:flex}
+.timer-rechip{font-family:var(--font-body);font-size:.82rem;line-height:1;color:var(--muted);background:#f4e8d60f;border:0;border-radius:999px;padding:.5rem 1rem;cursor:pointer;box-shadow:inset 0 0 0 1px #f4e8d629;transition:color .25s,background .25s,box-shadow .25s}
+.timer-rechip:hover{background:#f4e8d61f;color:var(--ink)}
+.timer-rechip.is-hot{color:#ffbdb2;background:#e0573d24;box-shadow:inset 0 0 0 1px #e0573d80}
+.timer-rechip.is-hot:before{content:"";display:inline-block;width:.5rem;height:.5rem;margin-right:.45rem;border-radius:50%;background:#ff6a4d;vertical-align:middle;animation:1.4s ease-in-out infinite rec-blink}
+@keyframes rec-blink{0%,to{opacity:1}50%{opacity:.25}}
+.timer-recnote{font-family:var(--font-body);font-size:clamp(.78rem,2.6vw,1rem);line-height:1.5;color:#ffd9c9;background:#e0573d1f;border-radius:.75rem;box-shadow:inset 0 0 0 1px #e0573d5c;padding:.6rem .8rem;margin:0;max-width:min(100%,34rem);text-align:left}
+.framed-hint{position:fixed;left:50%;transform:translateX(-50%);top:max(.5rem,env(safe-area-inset-top));z-index:60;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;justify-content:center;max-width:min(96vw,46rem);background:#3a1f18f2;border-radius:999px;padding:.5rem .6rem .5rem 1rem;box-shadow:inset 0 0 0 1px #e0573d99,0 10px 30px #000000a6;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.framed-hint-text{font-family:var(--font-body);font-size:clamp(.74rem,2.5vw,.92rem);color:#ffd9c9;line-height:1.4}
+.framed-hint-btn{flex:0 0 auto;border:0;border-radius:999px;background:#ff6a4d;color:#2a120c;font-family:var(--font-body);font-size:clamp(.74rem,2.5vw,.9rem);font-weight:650;padding:.42rem .85rem;cursor:pointer}
+.framed-hint-btn:hover{background:#ff8168}
+.framed-hint-close{flex:0 0 auto;border:0;background:none;color:#ffd9c9;font-size:1.05rem;line-height:1;padding:.2rem .45rem;cursor:pointer;opacity:.8}
+.framed-hint-close:hover{opacity:1}
+.timer-overlay.is-research .timer-ring{background:radial-gradient(circle at center, #141a17 62%, transparent 63%),conic-gradient(var(--research) calc(var(--p) * 1turn), #f4e8d61f 0)}
+.timer-overlay.is-research .timer-digits{color:var(--research)}
+.timer-overlay.is-overtime .timer-ring{background:radial-gradient(circle at center, #141a17 62%, transparent 63%),conic-gradient(#e8a04c calc(var(--p) * 1turn), #f4e8d61f 0);animation:2.2s ease-in-out infinite pulse-overtime}
+.timer-overlay.is-overtime .timer-digits{color:#f0b45e}
+@keyframes pulse-overtime{0%,to{transform:scale(1)}50%{transform:scale(1.025)}}
+.speech-stages{grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;width:min(100%,560px);margin:0;padding:0;list-style:none;display:grid}
+.speech-stage{min-height:3rem;color:var(--muted);background:#f4e8d60a;border-radius:1rem;justify-content:center;align-items:center;padding:.75rem .6rem;transition:background .35s,box-shadow .35s,color .35s,transform .35s;display:flex;box-shadow:inset 0 0 0 1px #f4e8d629}
+.speech-stage-label{font-family:var(--font-body);letter-spacing:.01em;font-size:clamp(.85rem,2.2vw,1.05rem);font-weight:600}
+.speech-stage.is-hit{color:#b7efc5;background:#489e6e38;transform:translateY(-1px);box-shadow:inset 0 0 0 1px #6ec48c8c,0 0 24px #489e6e2e}
+.speech-stage.is-pending{color:var(--muted)}
+
+@keyframes rise{0%{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes topic-in{0%{opacity:.65;transform:translateY(8px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes tick-flash{0%{opacity:.55;transform:translateY(4px)}to{opacity:.88;transform:translateY(0)}}
+@keyframes pulse-done{0%,to{transform:scale(1)}40%{transform:scale(1.06)}}
+@keyframes overlay-in{0%{opacity:0}to{opacity:1}}
+
+.error-screen{text-align:center;min-height:100svh;color:var(--ink);background:#121816;flex-direction:column;justify-content:center;align-items:center;gap:.85rem;padding:2rem;display:flex}
+.error-screen-mark{font-family:var(--font-display);color:var(--accent);margin:0;font-size:1.35rem;font-weight:500}
+.error-screen-title{font-family:var(--font-display);letter-spacing:-.03em;margin:0;font-size:clamp(1.6rem,4vw,2.1rem);font-weight:500}
+.error-screen-body{max-width:36ch;font-family:var(--font-body);color:var(--muted);margin:0 0 .5rem;font-size:.98rem;line-height:1.45}
+@media (prefers-reduced-motion:reduce){.brand,.stage,.reel.is-landed .reel-phrase,.reel.is-spinning .reel-phrase,.timer-overlay,.timer-overlay-inner,.settings-overlay,.settings-panel,.niche-menu{animation:none!important}}
+
+[inert]{pointer-events:none}
+.footer-note{font-family:var(--font-body);color:#f4e8d666;margin:clamp(2rem,6vh,3.5rem) 0 0;font-size:.72rem;letter-spacing:.05em}
+
+/* ---- 输出复盘面板 ---- */
+.review-overlay{z-index:45;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);background:radial-gradient(70% 55% at 50% 45%,#c47a4a1a,#0000 60%),radial-gradient(90% 80% at 50% 100%,#1c3a4847,#0000 55%),#0a0e0dd9;place-items:center;padding:clamp(1rem,4vw,2rem);animation:.35s cubic-bezier(.22,1,.36,1) both overlay-in;display:grid;position:fixed;inset:0}
+.review-panel{width:min(620px,100%);max-height:calc(100vh - 4rem);overflow-y:auto;background:#161c1a;border-radius:1.25rem;padding:1.35rem 1.4rem;animation:.4s cubic-bezier(.22,1,.36,1) both rise;box-shadow:inset 0 0 0 1px #f4e8d61f,0 24px 60px #0000008c}
+.review-title{font-family:var(--font-display);letter-spacing:-.03em;color:var(--ink);margin:0;font-size:1.45rem;font-weight:500}
+.review-topic{font-family:var(--font-body);color:var(--accent);margin:.2rem 0 0;font-size:.95rem;font-weight:600}
+/* 一行状态 + 一排工具按钮（复盘面板保持极简，不要第三行、第四行重复说明） */
+.review-status{font-family:var(--font-body);color:var(--muted);font-size:.84rem;line-height:1.5;margin:.5rem 0 0}
+.review-status:empty{display:none}
+.review-status.is-live{color:var(--accent-bright)}
+.review-rec-row{display:flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin-top:.75rem}
+.review-rec-row:empty{display:none}
+.btn.tool{display:inline-flex;align-items:center;gap:.3rem;background:#f4e8d60f;color:var(--ink);border-radius:999px;padding:.55rem .95rem;font-size:.84rem;font-weight:600;text-decoration:none;box-shadow:inset 0 0 0 1px #f4e8d62e}
+.btn.tool:hover{background:#f4e8d61c;box-shadow:inset 0 0 0 1px #f4e8d647}
+.review-audio{display:inline-flex}
+.review-edit-link{appearance:none;border:none;background:0 0;color:var(--muted);font-family:var(--font-body);font-size:.79rem;line-height:1.4;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0;margin:.5rem 0 0;align-self:flex-start}
+.review-edit-link:hover{color:var(--ink)}
+.review-text{margin-top:.7rem;background:#f4e8d60d;border-radius:.9rem;box-shadow:inset 0 0 0 1px #f4e8d61f;min-height:7.5rem;max-height:15rem;overflow-y:auto;padding:.8rem .9rem;font-family:var(--font-body);font-size:.95rem;line-height:1.7;color:var(--ink);white-space:pre-wrap;word-break:break-word}
+.review-text .interim{color:#f4e8d680}
+.review-text .pause-mark{color:#6fc3d8;font-size:.82rem}
+.filler-chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+.filler-chips:empty{display:none}
+.filler-chip{font-family:var(--font-body);font-size:.78rem;font-weight:600;color:var(--ink);background:#c47a4a26;border-radius:999px;padding:.3rem .7rem;box-shadow:inset 0 0 0 1px #c47a4a66}
+.filler-chip.hot{color:#ffb4a0;background:#a32d2d33;box-shadow:inset 0 0 0 1px #a32d2d80}
+.review-actions{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.7rem;margin-top:1.1rem}
+.review-paste{margin-top:.9rem}
+.review-paste textarea{width:100%;min-height:6rem;background:#f4e8d60d;border:none;border-radius:.9rem;box-shadow:inset 0 0 0 1px #f4e8d61f;color:var(--ink);font-family:var(--font-body);font-size:.95rem;line-height:1.7;padding:.8rem .9rem;resize:vertical}
+.review-paste textarea:focus{outline:none;box-shadow:inset 0 0 0 1px #c47a4a8c}
+
+/* 复盘结果 */
+.score-badge{display:flex;align-items:center;gap:1rem;justify-content:center;margin-top:1.1rem}
+.score-num{font-family:var(--font-display);font-size:3rem;font-weight:500;color:var(--accent-bright);line-height:1}
+.score-num small{font-size:1.2rem;color:var(--muted)}
+.score-caption{font-family:var(--font-body);color:var(--muted);font-size:.85rem;text-align:center;line-height:1.5}
+.result-section{margin-top:1.15rem}
+.result-heading{font-family:var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-size:.72rem;font-weight:650;margin:0 0 .55rem}
+.result-cleaned{background:#f4e8d60d;border-radius:.9rem;box-shadow:inset 0 0 0 1px #489e6e66;padding:.8rem .9rem;font-family:var(--font-body);font-size:.93rem;line-height:1.75;color:#d9f0de;white-space:pre-wrap;word-break:break-word}
+.result-note{font-family:var(--font-body);color:var(--muted);font-size:.8rem;margin:0 0 .45rem}
+.freq-table{width:100%;border-collapse:collapse;font-family:var(--font-body);font-size:.88rem}
+.freq-table td{padding:.45rem .55rem;border-bottom:1px solid #f4e8d61a;color:var(--ink)}
+.freq-table td:last-child{text-align:right;font-variant-numeric:tabular-nums;color:var(--accent-bright);font-weight:600}
+.freq-table tr:last-child td{border-bottom:none}
+.parts-table td{font-size:.85rem}
+.parts-table td:nth-child(1){white-space:nowrap}
+.parts-table td:nth-child(2){color:var(--muted);font-weight:400;text-align:right}
+.parts-table td:nth-child(3){white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
+.parts-table td.pt-full{color:#5fd39a}
+.parts-table td.pt-part{color:var(--accent-bright)}
+.parts-table td.pt-neg{color:#f08a6c}
+.advice-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.55rem}
+.advice-list li{font-family:var(--font-body);color:var(--muted);font-size:.88rem;line-height:1.6;padding-left:1.15rem;position:relative}
+.advice-list li:before{content:"";position:absolute;left:0;top:.55em;width:.45rem;height:.45rem;border-radius:50%;background:var(--accent)}
+
+/* ---- 诊断结论（主题 / 优点 / 缺点 / 口头禅 / 综合评分）---- */
+.dx{padding-left:.85rem;border-left:2px solid #f4e8d61a;margin-left:.1rem}
+.dx-block+.dx-block{margin-top:.95rem}
+.dx-title{font-family:var(--font-body);font-size:.76rem;font-weight:650;color:var(--ink);letter-spacing:.06em;margin:0 0 .4rem;display:flex;align-items:center;gap:.4rem}
+.dx-title i{flex-shrink:0;width:1.05rem;height:1.05rem;border-radius:.3rem;display:grid;place-items:center;font-style:normal;font-size:.62rem;font-weight:700}
+.dx-title.t-topic i{background:#6fc3d826;color:#8fd6e8;box-shadow:inset 0 0 0 1px #6fc3d866}
+.dx-title.t-pro i{background:#5fd39a26;color:#7fe3b4;box-shadow:inset 0 0 0 1px #5fd39a66}
+.dx-title.t-con i{background:#f08a6c26;color:#ffb4a0;box-shadow:inset 0 0 0 1px #f08a6c66}
+.dx-title.t-fl i{background:#c47a4a26;color:#e8b58a;box-shadow:inset 0 0 0 1px #c47a4a66}
+.dx-title.t-score i{background:#f4e8d614;color:var(--ink);box-shadow:inset 0 0 0 1px #f4e8d63d}
+.dx-kw{display:flex;flex-wrap:wrap;gap:.35rem;margin:0}
+.kw{font-family:var(--font-body);font-size:.78rem;color:#cfe9f2;background:#6fc3d81f;border-radius:999px;padding:.26rem .62rem;box-shadow:inset 0 0 0 1px #6fc3d84d}
+.dx-note{font-family:var(--font-body);font-size:.75rem;color:#f4e8d666;margin:.42rem 0 0;line-height:1.45}
+.dx-list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:.45rem}
+.dx-list li{font-family:var(--font-body);font-size:.86rem;line-height:1.55;color:var(--muted);padding-left:1.1rem;position:relative}
+.dx-list li b{color:var(--ink);font-weight:600}
+.dx-list.pro li:before{content:"+";position:absolute;left:0;top:0;color:#5fd39a;font-weight:700}
+.dx-list.con li:before{content:"−";position:absolute;left:0;top:0;color:#f08a6c;font-weight:700}
+.skel{display:flex;flex-wrap:wrap;gap:.4rem;margin:0}
+.skel-item{font-family:var(--font-body);font-size:.76rem;color:var(--muted);background:#f4e8d60d;border-radius:.5rem;padding:.3rem .55rem;box-shadow:inset 0 0 0 1px #f4e8d61f}
+.skel-item.ok{color:#bfe8cf;box-shadow:inset 0 0 0 1px #489e6e4d}
+.skel-item.no{color:#ffcdbb;box-shadow:inset 0 0 0 1px #a32d2d4d}
+
+/* ---- 历史面板 ---- */
+.history-panel{width:min(560px,100%)}
+.history-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.55rem}
+.sync-box{background:#f4e8d60a;border-radius:1rem;box-shadow:inset 0 0 0 1px #f4e8d61f;padding:.85rem .9rem;margin:0 0 1rem;display:flex;flex-direction:column;gap:.55rem}
+.sync-row{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.sync-code-row{gap:.45rem}
+.sync-label{font-family:var(--font-body);font-size:.78rem;color:var(--muted);flex:0 0 auto}
+.sync-code-input{flex:1 1 12rem;min-width:0;background:#f4e8d61a;border:0;border-radius:.6rem;padding:.42rem .6rem;color:var(--ink);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.76rem;box-shadow:inset 0 0 0 1px #f4e8d629}
+.sync-code-input:focus{outline:none;box-shadow:inset 0 0 0 1px var(--accent)}
+.sync-hint{font-family:var(--font-body);font-size:.74rem;line-height:1.55;color:var(--muted);margin:0;opacity:.85}
+.sync-status{font-family:var(--font-body);font-size:.8rem;line-height:1.55;color:#b7efc5;margin:0;min-height:1.1em;word-break:break-word}
+.history-item{background:#f4e8d60a;border-radius:.9rem;box-shadow:inset 0 0 0 1px #f4e8d629;padding:.75rem .85rem}
+.history-item-head{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap}
+.history-date{font-family:var(--font-body);font-size:.72rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.history-topic{font-family:var(--font-body);font-size:.95rem;font-weight:600;color:var(--ink);flex:1}
+.history-meta{font-family:var(--font-body);font-size:.76rem;color:var(--muted);margin-top:.25rem}
+.history-score{color:var(--accent-bright);font-weight:600}
+.history-detail{margin-top:.6rem;border-top:1px solid #f4e8d61a;padding-top:.6rem;display:none}
+.history-item.is-open .history-detail{display:block}
+.history-detail h4{font-family:var(--font-body);letter-spacing:.1em;color:var(--accent);font-size:.68rem;font-weight:650;margin:.5rem 0 .3rem}
+.history-detail p{font-family:var(--font-body);font-size:.86rem;line-height:1.7;color:var(--ink);margin:0;white-space:pre-wrap;word-break:break-word}
+.history-detail .cleaned{color:#d9f0de}
+.history-item-actions{display:flex;gap:.5rem;margin-top:.55rem;justify-content:flex-end}
+.history-expand{appearance:none;border:none;background:0 0;color:var(--muted);font-family:var(--font-body);font-size:.76rem;cursor:pointer;padding:.15rem .3rem;text-decoration:underline;text-underline-offset:3px}
+.history-expand:hover{color:var(--ink)}
+.history-del{appearance:none;border:none;background:0 0;color:#c96a5c;font-family:var(--font-body);font-size:.76rem;cursor:pointer;padding:.15rem .3rem}
+.history-del:hover{color:#ff8f7e}
+.history-empty{text-align:center;color:var(--muted);font-family:var(--font-body);font-size:.88rem;padding:2.5rem 0}
+.btn.danger-ghost{color:#e08575;background:0 0;box-shadow:inset 0 0 0 1.5px #a32d2d66}
+.btn.danger-ghost:hover{box-shadow:inset 0 0 0 1.5px #c47a4a8c;color:#ffb4a0}
+
+/* ---- 移动端微调 ---- */
+@media (max-width:520px){
+  .brand{margin-bottom:clamp(2rem,6vh,3rem)}
+  .reel{min-height:clamp(9rem,30vw,12rem)}
+  .btn{padding:.82rem 1.15rem}
+  .actions{gap:.6rem}
+  .niche-select{width:min(100%,260px)}
+  .footer-note{font-size:.68rem;text-align:center;padding:0 1rem}
+  .speech-stages{gap:.45rem}
+  .speech-stage{padding:.65rem .4rem;min-height:2.6rem}
+}
+@media (display-mode:standalone){
+  .page{padding-top:max(1rem, env(safe-area-inset-top,0px))}
+}
+    </style>
+  </head>
+  <body>
+<div id="origin-note" style="position:fixed;left:0;right:0;top:0;z-index:99998;display:flex;align-items:center;gap:8px;padding:6px 12px;font:12px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;color:#cfe3d8;background:rgba(18,24,22,.92);border-bottom:1px solid rgba(120,200,160,.22);backdrop-filter:blur(8px);"><span style="flex:1;">个人学习 / 作品集用途的二次开发版本 —— 产品形态参考 <a href="https://unprompted.cool/" target="_blank" rel="noopener" style="color:#7bd6a5;text-decoration:none;border-bottom:1px dotted #7bd6a5;">unprompted.cool</a>，题库与评分、洗稿、云同步等模块为本版本自行实现</span><button onclick="this.parentNode.style.display='none'" style="background:none;border:0;color:#8aa89a;cursor:pointer;font-size:16px;line-height:1;padding:0 4px;">&times;</button></div>
+    <div id="root"></div>
+    <script>
+"use strict";
+
+/* ---------------- 题目池 ---------------- */
+/* ===== TOPICS:BEGIN ===== 下面这段题库由「更新词库.py」自动生成，请不要手改 ===== */
+const CATEGORIES = [
+ {
+  "id": "daily",
+  "label": "日常话题",
+  "emoji": "✦",
+  "topics": [
+   "怀旧",
+   "舒适区",
+   "肌肉记忆",
+   "通勤",
+   "骚扰电话",
+   "语音留言",
+   "门铃",
+   "旧物传承",
+   "书架",
+   "杂物抽屉",
+   "脑子锈掉",
+   "镜子",
+   "候诊室",
+   "自动纠错",
+   "群聊",
+   "剩饭",
+   "红绿灯",
+   "第一印象",
+   "拖延症",
+   "习惯的力量",
+   "同理心",
+   "好奇心",
+   "专注力",
+   "时间管理",
+   "复盘",
+   "临界点",
+   "从众心理",
+   "自我设限",
+   "沉没成本",
+   "情绪价值",
+   "边界感",
+   "成长型思维",
+   "正反馈",
+   "标签效应",
+   "延迟满足",
+   "信息过载",
+   "认知偏差",
+   "行动力",
+   "内驱力",
+   "价值感",
+   "提问能力",
+   "倾听",
+   "仪式感",
+   "长期主义",
+   "自律与自由",
+   "批判性思维",
+   "搭便车效应",
+   "锚定效应",
+   "峰终定律",
+   "心流",
+   "激励机制",
+   "复利思维",
+   "表达的两个层次"
+  ]
+ },
+ {
+  "id": "hot",
+  "label": "最近热点",
+  "emoji": "🔥",
+  "topics": [
+   "AI 会不会取代我",
+   "短视频上瘾",
+   "情绪价值",
+   "数字游民",
+   "断亲",
+   "让 AI 帮你干活",
+   "一人公司",
+   "松弛感",
+   "反精致",
+   "活人感",
+   "精神离职",
+   "电子布洛芬",
+   "银发经济",
+   "低空经济",
+   "人形机器人",
+   "谷子经济",
+   "票根经济",
+   "赛博对账",
+   "手搓经济",
+   "预制内容",
+   "反向许愿",
+   "信息茧房",
+   "返乡创业",
+   "AI 换脸诈骗",
+   "开源大模型",
+   "绿色生活",
+   "考公热",
+   "容貌焦虑",
+   "搭子文化",
+   "城市烟火气",
+   "副业焦虑",
+   "国货崛起",
+   "育儿补贴",
+   "银发上网",
+   "读书还有用吗",
+   "重启人生",
+   "具身智能",
+   "智能经济",
+   "AI 智能体（Agent）",
+   "自主算力与算力普惠",
+   "数据要素与数据治理",
+   "AI 安全治理",
+   "AI 进军硬核科研",
+   "韧性",
+   "内卷与反内卷",
+   "情绪断舍离",
+   "AI 分身与替代焦虑",
+   "低欲社交与云搭子",
+   "AI 与人的边界",
+   "数字平权与数字鸿沟",
+   "平台经济与骑手困境",
+   "情绪内耗与精神续航",
+   "乡村振兴与村咖",
+   "碳中和与绿色转型",
+   "教育公平",
+   "独居时代",
+   "城市品牌与体育热"
+  ]
+ },
+ {
+  "id": "concepts",
+  "label": "专业概念",
+  "emoji": "🧩",
+  "topics": [
+   "富兰克林效应",
+   "透明度错觉",
+   "情感预测偏差",
+   "聚焦错觉",
+   "历史终局错觉",
+   "讽刺进程理论",
+   "情绪标记",
+   "谢林点",
+   "一报还一报",
+   "消耗战",
+   "高成本信号",
+   "志愿者困境",
+   "猎鹿博弈",
+   "鸵鸟效应",
+   "赌场资金效应",
+   "折中效应",
+   "面额效应",
+   "检察官谬误",
+   "辛普森悖论",
+   "伯克森悖论",
+   "小数定律",
+   "假阳性悖论",
+   "林迪效应",
+   "沉没成本谬误",
+   "幸存者偏差",
+   "边际效用递减",
+   "信息茧房",
+   "塔西佗陷阱",
+   "破窗效应",
+   "囚徒困境",
+   "公地悲剧",
+   "帕累托最优",
+   "马太效应",
+   "达克效应",
+   "锚定效应",
+   "确认偏误",
+   "路径依赖",
+   "长尾理论",
+   "飞轮效应",
+   "第二曲线",
+   "黑天鹅与灰犀牛",
+   "反脆弱",
+   "涌现",
+   "熵增定律",
+   "正态分布与幂律分布",
+   "奥卡姆剃刀",
+   "认知失调",
+   "框架效应",
+   "首因效应与近因效应",
+   "零和博弈与非零和",
+   "自我实现预言",
+   "系统性思维",
+   "延迟满足",
+   "第一性原理",
+   "注意力经济",
+   "声誉资本",
+   "批判性思维",
+   "沉默的螺旋",
+   "群体极化",
+   "拟剧理论",
+   "规训与自我规训"
+  ]
+ },
+ {
+  "id": "personal-finance",
+  "label": "个人理财",
+  "emoji": "💰",
+  "topics": [
+   "应急基金",
+   "复利",
+   "生活方式升级",
+   "沉没成本",
+   "机会成本",
+   "净资产",
+   "现金流",
+   "高息负债",
+   "未雨绸缪",
+   "分散投资",
+   "定投",
+   "流动性",
+   "烧钱速度",
+   "安全垫",
+   "信用分",
+   "货币的时间价值",
+   "风险承受力",
+   "闲置现金",
+   "订阅陷阱",
+   "资金跑道",
+   "延迟满足"
+  ]
+ },
+ {
+  "id": "entrepreneurship",
+  "label": "创业",
+  "emoji": "🚀",
+  "topics": [
+   "切身利益",
+   "第一个客户",
+   "现金就是氧气",
+   "创始人模式",
+   "学会说不",
+   "渠道",
+   "单位经济模型",
+   "护城河",
+   "白手起家",
+   "产品市场契合",
+   "声誉资本",
+   "汗水股权",
+   "拼命还是杠杆",
+   "单人创始人",
+   "公开构建",
+   "快速试错",
+   "客户至上",
+   "转型",
+   "信任即货币",
+   "一夜成名的神话",
+   "副业天花板",
+   "先发布再说"
+  ]
+ },
+ {
+  "id": "startups",
+  "label": "初创公司",
+  "emoji": "🌱",
+  "topics": [
+   "最小可用产品",
+   "资金跑道",
+   "种子轮",
+   "增长黑客",
+   "用户流失",
+   "网络效应",
+   "烧钱率",
+   "增长势头",
+   "转型",
+   "创始人与市场契合",
+   "滩头市场",
+   "病毒循环",
+   "路演日",
+   "产品债",
+   "早期用户",
+   "过早扩张",
+   "收购式招聘",
+   "登月项目",
+   "从 0 到 1"
+  ]
+ },
+ {
+  "id": "tech-ai",
+  "label": "科技 / AI",
+  "emoji": "🤖",
+  "topics": [
+   "黑盒",
+   "训练数据",
+   "提示词工程",
+   "幻觉",
+   "模型漂移",
+   "延迟",
+   "API 调用",
+   "开源",
+   "微调",
+   "上下文窗口",
+   "自动化偏见",
+   "数据护城河",
+   "边界情况",
+   "技术债",
+   "单点故障",
+   "云端还是本地",
+   "推理成本",
+   "合成数据",
+   "反馈循环",
+   "零样本",
+   "注意力机制",
+   "智能体工作流"
+  ]
+ },
+ {
+  "id": "fitness",
+  "label": "健身",
+  "emoji": "💪",
+  "topics": [
+   "渐进超负荷",
+   "休息日",
+   "肌肉记忆",
+   "动作标准高于虚荣",
+   "平台期",
+   "热身",
+   "坚持胜过强度",
+   "减载周",
+   "活动幅度",
+   "恢复欠债",
+   "个人纪录",
+   "身体成分",
+   "有氧基础",
+   "灵活性",
+   "酸痛是信号",
+   "到场就是赢",
+   "负重下的呼吸",
+   "意念与肌肉的连接",
+   "容量还是强度",
+   "习惯叠加",
+   "健身房焦虑",
+   "维持期",
+   "功能性力量",
+   "睡眠也是训练",
+   "互相监督的伙伴",
+   "新手红利期",
+   "长期运动员心态"
+  ]
+ },
+ {
+  "id": "nutrition",
+  "label": "营养",
+  "emoji": "🥗",
+  "topics": [
+   "空热量",
+   "蛋白质",
+   "补水",
+   "备餐",
+   "嘴馋还是真饿",
+   "微量营养素",
+   "膳食纤维",
+   "血糖飙升",
+   "正念饮食",
+   "天然完整食物",
+   "肠道健康",
+   "欺骗餐",
+   "情绪性进食",
+   "可持续的热量缺口",
+   "早餐仪式",
+   "深夜加餐",
+   "超加工食品",
+   "到底吃够没有",
+   "餐盘上的颜色",
+   "社交进食",
+   "进食时机",
+   "补剂",
+   "自己做饭",
+   "能量供给"
+  ]
+ },
+ {
+  "id": "productivity",
+  "label": "效率",
+  "emoji": "⚡",
+  "topics": [
+   "深度工作",
+   "上下文切换",
+   "收件箱清零",
+   "时间盒",
+   "帕金森定律",
+   "两分钟原则",
+   "批量处理",
+   "精力管理",
+   "完成比完美重要",
+   "未了结的事",
+   "专注模式",
+   "会议税",
+   "单任务",
+   "晨间随笔",
+   "收工仪式",
+   "第二大脑",
+   "拖延",
+   "消除阻力",
+   "注意力残留",
+   "受保护的时段",
+   "看产出不看工时",
+   "减少干扰的节食"
+  ]
+ },
+ {
+  "id": "history",
+  "label": "历史",
+  "emoji": "📜",
+  "topics": [
+   "柏林墙倒塌",
+   "登月",
+   "印刷术的发明",
+   "大宪章的签署",
+   "攻占巴士底狱",
+   "首届奥林匹克运动会",
+   "青霉素的发现",
+   "莱特兄弟首飞",
+   "君士坦丁堡陷落",
+   "波士顿倾茶事件",
+   "向华盛顿进军",
+   "丝绸之路的开通",
+   "切尔诺贝利核事故",
+   "长城建成",
+   "凡尔赛条约",
+   "第一张照片",
+   "苏伊士运河通航",
+   "英国废除奴隶制",
+   "斯普特尼克号发射",
+   "佛罗伦萨的文艺复兴",
+   "1929 年股市崩盘",
+   "曼德拉获释",
+   "金字塔的建造",
+   "女性选举权的首次胜利",
+   "广岛原子弹",
+   "郑和下西洋",
+   "罗马帝国灭亡",
+   "互联网的发明"
+  ]
+ },
+ {
+  "id": "literature",
+  "label": "文学",
+  "emoji": "📚",
+  "topics": [
+   "《1984》",
+   "《白鲸》",
+   "《傲慢与偏见》",
+   "《百年孤独》",
+   "《了不起的盖茨比》",
+   "《罪与罚》",
+   "《杀死一只知更鸟》",
+   "《美丽新世界》",
+   "《奥德赛》",
+   "《弗兰肯斯坦》",
+   "《堂吉诃德》",
+   "《宠儿》",
+   "《麦田里的守望者》",
+   "《战争与和平》",
+   "《五号屠场》",
+   "海明威",
+   "卡夫卡",
+   "陀思妥耶夫斯基",
+   "爱伦·坡",
+   "乔伊斯",
+   "艾米莉·狄金森",
+   "马克·吐温"
+  ]
+ }
+];
+/* ===== TOPICS:END ===== */
+
+const SELECTABLE = CATEGORIES;
+
+const MODES = [
+  { id:"off-the-cuff", label:"即兴开讲", emoji:"🧠", blurb:"短版：抽到题就开口，默认 1 分钟准备，全程即兴。" },
+  { id:"deep-research", label:"深度研究", emoji:"🔍", blurb:"长版：先给足准备时间（默认 10 分钟）理提纲，再开始演讲计时。" }
+];
+
+const STAGES = ["是什么？", "那又怎样？", "怎么办？"];
+
+/* ---------------- 工具 ---------------- */
+const catById = id => CATEGORIES.find(c => c.id === id) || CATEGORIES[0];
+const modeById = id => MODES.find(m => m.id === id) || MODES[0];
+const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
+
+function clock(sec) {
+  const t = Math.max(0, Math.floor(sec));
+  return Math.floor(t / 60) + ":" + String(t % 60).padStart(2, "0");
+}
+function duration(sec) {
+  const t = Math.max(0, Math.floor(sec));
+  const m = Math.floor(t / 60), s = t % 60;
+  if (m && s) return m + " 分 " + s + " 秒";
+  if (m) return m + " 分钟";
+  if (t === 0) return "0 分钟";
+  return s + " 秒";
+}
+function normalize(kind, sec) {
+  const def = kind === "research" ? 600 : kind === "speechDeep" ? 180 : 60;
+  if (!Number.isFinite(sec)) return def;
+  const max = kind === "research" ? 60 : 10;
+  const m = Math.round(sec / 60);
+  return clamp(m, 1, max) * 60;
+}
+
+/* ---------------- 本地存储 ---------------- */
+const PREFIX = "unprompted:";
+function loadNum(key, fallback) {
+  try {
+    const raw = window.localStorage.getItem(PREFIX + key);
+    if (raw === null) return fallback;
+    const n = Number(raw);
+    return Number.isFinite(n) ? normalize(key, n) : fallback;
+  } catch (e) { return fallback; }
+}
+function saveNum(key, val) {
+  try { window.localStorage.setItem(PREFIX + key, String(normalize(key, val))); } catch (e) {}
+}
+function loadBool(key, fallback) {
+  try {
+    const raw = window.localStorage.getItem(PREFIX + key);
+    if (raw === null) return fallback;
+    if (raw === "true") return true;
+    if (raw === "false") return false;
+    return fallback;
+  } catch (e) { return fallback; }
+}
+function saveBool(key, val) {
+  try { window.localStorage.setItem(PREFIX + key, String(val)); } catch (e) {}
+}
+
+/* ---------------- 音效（Web Audio 合成，与原站一致） ---------------- */
+let audioCtx = null, muted = false;
+function ac() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === "suspended") audioCtx.resume();
+  return audioCtx;
+}
+function tone(freq, start, dur, type, peak, dest) {
+  const c = ac(), osc = c.createOscillator(), gain = c.createGain();
+  osc.type = type;
+  osc.frequency.setValueAtTime(freq, start);
+  gain.gain.setValueAtTime(1e-4, start);
+  gain.gain.exponentialRampToValueAtTime(peak, start + 0.01);
+  gain.gain.exponentialRampToValueAtTime(1e-4, start + dur);
+  osc.connect(gain); gain.connect(dest);
+  osc.start(start); osc.stop(start + dur + 0.02);
+}
+function tick(vol) {
+  if (muted) return;
+  const c = ac(), now = c.currentTime, dur = 0.018;
+  const len = Math.max(1, Math.floor(c.sampleRate * dur));
+  const buf = c.createBuffer(1, len, c.sampleRate);
+  const data = buf.getChannelData(0);
+  for (let i = 0; i < len; i++) data[i] = (Math.random() * 2 - 1) * (1 - i / len);
+  const src = c.createBufferSource(); src.buffer = buf;
+  const filter = c.createBiquadFilter();
+  filter.type = "bandpass";
+  filter.frequency.setValueAtTime(2200 + Math.random() * 800, now);
+  filter.Q.value = 1.2;
+  const gain = c.createGain();
+  gain.gain.setValueAtTime(1e-4, now);
+  gain.gain.exponentialRampToValueAtTime(0.55 * vol, now + 0.001);
+  gain.gain.exponentialRampToValueAtTime(1e-4, now + dur);
+  src.connect(filter); filter.connect(gain); gain.connect(c.destination);
+  src.start(now); src.stop(now + dur + 0.01);
+}
+function landChime() {
+  if (muted) return;
+  const c = ac(), now = c.currentTime, g = c.createGain();
+  g.gain.value = 0.45; g.connect(c.destination);
+  [523.25, 659.25, 783.99].forEach((f, i) => tone(f, now + i * 0.07, 0.45, "sine", 0.28, g));
+}
+function finishChime() {
+  if (muted) return;
+  const c = ac(), now = c.currentTime, g = c.createGain();
+  g.gain.value = 0.5; g.connect(c.destination);
+  [392, 523.25, 659.25, 784].forEach((f, i) => tone(f, now + i * 0.12, 0.55, "triangle", 0.32, g));
+  tone(1046.5, now + 0.55, 0.9, "sine", 0.22, g);
+}
+function primeAudio() { try { ac(); } catch (e) {} }
+
+/* ---------------- 状态 ---------------- */
+const state = {
+  mode: "off-the-cuff",
+  niche: "daily",
+  // 演讲时长两种模式分开记：即兴开讲默认 1 分钟，深度研究默认 3 分钟
+  speechCuff: loadNum("speechCuff", loadNum("speech", 60)),
+  speechDeep: loadNum("speechDeep", 180),
+  research: loadNum("research", 600),
+  muted: loadBool("muted", false),
+  topic: "",
+  landed: null,
+  spinning: false,
+  phase: "idle",           // idle | research | speech | overtime | ready | done
+  speech: 60,              // 当前模式的演讲时长（随模式切换同步）
+  remaining: 60,
+  overtime: 0,             // 超时后继续讲的秒数
+  settingsOpen: false,
+  menuOpen: false,
+  reelIndex: 0
+};
+state.speech = state.mode === "deep-research" ? state.speechDeep : state.speechCuff;
+state.remaining = state.speech;
+let session = null;   // 一轮完整练习（抽题+计时走完）才写入历史
+muted = state.muted;
+
+/* 支持通过 ?mode=deep-research 直接进入某个模式（桌面图标长按菜单用） */
+try {
+  const q = new URLSearchParams(location.search).get("mode");
+  if (q && MODES.some(m => m.id === q)) state.mode = q;
+} catch (e) {}
+
+/* 模式只决定准备时长，题目池由分类决定（两者解耦） */
+let topics = catById(state.niche).topics;
+state.reelIndex = Math.max(0, topics.indexOf(pick(topics)));
+state.topic = topics[state.reelIndex];
+
+/* ---------------- DOM ---------------- */
+const root = document.getElementById("root");
+const el = (tag, cls, text) => {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text !== undefined) n.textContent = text;
+  return n;
+};
+const svgIcon = (paths, cls) => {
+  const s = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  s.setAttribute("viewBox", "0 0 24 24");
+  s.setAttribute("aria-hidden", "true");
+  s.setAttribute("focusable", "false");
+  if (cls) s.setAttribute("class", cls);
+  paths.forEach(d => {
+    const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    p.setAttribute("d", d);
+    s.appendChild(p);
+  });
+  return s;
+};
+const GEAR_PATHS = [
+  "M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z",
+  "M19.4 13.05a7.4 7.4 0 0 0 0-2.1l1.7-1.32a.55.55 0 0 0 .13-.7l-1.7-2.94a.55.55 0 0 0-.66-.24l-2 .8a7.6 7.6 0 0 0-1.82-1.05l-.3-2.13A.55.55 0 0 0 14.2 3h-4.4a.55.55 0 0 0-.55.46l-.3 2.13a7.6 7.6 0 0 0-1.82 1.05l-2-.8a.55.55 0 0 0-.66.24L2.77 8.93a.55.55 0 0 0 .13.7L4.6 10.95a7.4 7.4 0 0 0 0 2.1l-1.7 1.32a.55.55 0 0 0-.13.7l1.7 2.94c.14.25.43.35.66.24l2-.8c.55.42 1.16.76 1.82 1.05l.3 2.13c.05.26.28.46.55.46h4.4c.27 0 .5-.2.55-.46l.3-2.13c.66-.29 1.27-.63 1.82-1.05l2 .8c.23.11.52 0 .66-.24l1.7-2.94a.55.55 0 0 0-.13-.7l-1.7-1.32Z"
+];
+const IG_PATHS = [
+  "M4 4h16v16H4z", "M12 10.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Z", "M17 6.2h.01"
+];
+
+function buildPage() {
+  root.innerHTML = "";
+  const page = el("div", "page");
+  page.appendChild(el("div", "atmosphere"));
+  page.setAttribute("aria-hidden", "false");
+
+  /* header */
+  const brand = el("header", "brand");
+  brand.appendChild(el("p", "brand-mark", "Unprompted"));
+  const line = el("h1", "brand-line");
+  line.appendChild(document.createTextNode("made by "));
+  const link = document.createElement("a");
+  link.className = "brand-link";
+  link.href = "https://www.instagram.com/bitterbuilds/";
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.title = "@bitterbuilds on Instagram";
+  const ig = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  ig.setAttribute("viewBox", "0 0 24 24");
+  ig.setAttribute("class", "brand-link-icon");
+  ig.setAttribute("aria-hidden", "true");
+  ig.setAttribute("focusable", "false");
+  const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+  rect.setAttribute("x", "3"); rect.setAttribute("y", "3");
+  rect.setAttribute("width", "18"); rect.setAttribute("height", "18");
+  rect.setAttribute("rx", "5"); rect.setAttribute("ry", "5");
+  ig.appendChild(rect);
+  const c1 = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  c1.setAttribute("cx", "12"); c1.setAttribute("cy", "12"); c1.setAttribute("r", "4.2");
+  ig.appendChild(c1);
+  const c2 = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  c2.setAttribute("cx", "17.4"); c2.setAttribute("cy", "6.6"); c2.setAttribute("r", "1.1");
+  c2.setAttribute("fill", "currentColor"); c2.setAttribute("stroke", "none");
+  ig.appendChild(c2);
+  link.appendChild(ig);
+  link.appendChild(el("span", null, "@bitterbuilds"));
+  line.appendChild(link);
+  brand.appendChild(line);
+  brand.appendChild(el("p", "brand-sub", "即兴演讲练习"));
+  page.appendChild(brand);
+
+  /* stage */
+  const stage = el("main", "stage");
+  const stageBody = el("div", "stage-body");
+  const controls = el("div", "controls");
+
+  // mode switch
+  const modeSwitch = el("div", "mode-switch");
+  modeSwitch.setAttribute("role", "radiogroup");
+  modeSwitch.setAttribute("aria-label", "练习模式");
+  const thumb = el("span", "mode-thumb");
+  thumb.setAttribute("aria-hidden", "true");
+  modeSwitch.appendChild(thumb);
+  const modeBtns = MODES.map((m, i) => {
+    const b = el("button", "mode-option");
+    b.type = "button";
+    b.setAttribute("role", "radio");
+    b.appendChild(el("span", "mode-emoji", m.emoji));
+    b.appendChild(el("span", "mode-label", m.label));
+    b.addEventListener("click", () => setMode(m.id));
+    b.addEventListener("keydown", e => {
+      if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+        e.preventDefault();
+        const n = (i + 1) % MODES.length;
+        setMode(MODES[n].id); modeBtns[n].focus();
+      } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        e.preventDefault();
+        const n = (i - 1 + MODES.length) % MODES.length;
+        setMode(MODES[n].id); modeBtns[n].focus();
+      }
+    });
+    modeSwitch.appendChild(b);
+    return b;
+  });
+  controls.appendChild(modeSwitch);
+
+  const blurb = el("p", "mode-blurb");
+  controls.appendChild(blurb);
+
+  // niche select
+  const nicheWrap = el("div", "niche-select");
+  const trigger = el("button", "niche-trigger");
+  trigger.type = "button";
+  trigger.setAttribute("aria-haspopup", "listbox");
+  trigger.setAttribute("aria-expanded", "false");
+  const tEmoji = el("span", "niche-emoji");
+  const tLabel = el("span", "niche-label");
+  const tCaret = el("span", "niche-caret");
+  tCaret.setAttribute("aria-hidden", "true");
+  trigger.appendChild(tEmoji); trigger.appendChild(tLabel); trigger.appendChild(tCaret);
+  nicheWrap.appendChild(trigger);
+  const menu = el("div", "niche-menu");
+  menu.setAttribute("role", "listbox");
+  menu.setAttribute("aria-label", "题目分类");
+  nicheWrap.appendChild(menu);
+  controls.appendChild(nicheWrap);
+
+  stageBody.appendChild(controls);
+
+  // reel
+  const reel = el("section", "reel");
+  const eyebrow = el("p", "reel-eyebrow");
+  const phrase = el("p", "reel-phrase");
+  reel.appendChild(eyebrow);
+  reel.appendChild(phrase);
+  stageBody.appendChild(reel);
+  const srOnly = el("p", "sr-only");
+  srOnly.setAttribute("aria-live", "polite");
+  stageBody.appendChild(srOnly);
+  stage.appendChild(stageBody);
+
+  // actions
+  const actions = el("div", "actions");
+  const actionsMain = el("div", "actions-main");
+  const spinBtn = el("button", "btn primary");
+  spinBtn.type = "button";
+  spinBtn.addEventListener("click", doSpin);
+  const startBtn = el("button", "btn secondary");
+  startBtn.type = "button";
+  startBtn.addEventListener("click", startFlow);
+  actionsMain.appendChild(spinBtn);
+  actionsMain.appendChild(startBtn);
+  actions.appendChild(actionsMain);
+
+  // settings
+  const settings = el("div", "settings");
+  const sTrigger = el("button", "settings-trigger");
+  sTrigger.type = "button";
+  sTrigger.title = "设置";
+  sTrigger.setAttribute("aria-label", "设置");
+  sTrigger.setAttribute("aria-expanded", "false");
+  sTrigger.appendChild(svgIcon(GEAR_PATHS));
+  sTrigger.addEventListener("click", () => toggleSettings());
+  settings.appendChild(sTrigger);
+  actions.appendChild(settings);
+
+  // 历史入口（随时可看，不受计时锁定影响）
+  const historyWrap = el("div", "settings");
+  const hTrigger = el("button", "settings-trigger");
+  hTrigger.type = "button";
+  hTrigger.title = "练习历史";
+  hTrigger.setAttribute("aria-label", "练习历史");
+  const clockIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  clockIcon.setAttribute("viewBox", "0 0 24 24");
+  clockIcon.setAttribute("aria-hidden", "true");
+  clockIcon.setAttribute("focusable", "false");
+  ["M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z", "M12 7.4v5l3.4 2"].forEach(d => {
+    const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    p.setAttribute("d", d);
+    clockIcon.appendChild(p);
+  });
+  hTrigger.appendChild(clockIcon);
+  hTrigger.addEventListener("click", openHistory);
+  historyWrap.appendChild(hTrigger);
+  actions.appendChild(historyWrap);
+  stage.appendChild(actions);
+
+  page.appendChild(stage);
+  page.appendChild(el("p", "footer-note", "抽个题目，开口就讲 · 空格抽题，Esc 退出计时"));
+  root.appendChild(page);
+
+  const overlayHost = el("div");
+  root.appendChild(overlayHost);
+
+  return {
+    page, brand, stageBody, controls, modeSwitch, thumb, modeBtns, blurb,
+    nicheWrap, trigger, tEmoji, tLabel, menu, reel, eyebrow, phrase, srOnly,
+    spinBtn, startBtn, settings, sTrigger, overlayHost, actionsMain
+  };
+}
+
+const ui = buildPage();
+let overlay = null;      // 计时浮层
+let settingsPanel = null;
+
+/* ---------------- 渲染 ---------------- */
+function renderControls() {
+  const mi = Math.max(0, MODES.findIndex(m => m.id === state.mode));
+  ui.thumb.style.setProperty("--i", mi);
+  ui.modeBtns.forEach((b, i) => {
+    const on = MODES[i].id === state.mode;
+    b.classList.toggle("is-active", on);
+    b.setAttribute("aria-checked", on ? "true" : "false");
+    b.tabIndex = on ? 0 : -1;
+    b.disabled = locked();
+  });
+  ui.modeSwitch.classList.toggle("is-disabled", locked());
+  ui.blurb.textContent = modeById(state.mode).blurb;
+
+  // 分类下拉在两种模式下都能用：模式决定准备多久，分类决定抽什么题
+  const cat = catById(state.niche);
+  ui.tEmoji.textContent = cat.emoji;
+  ui.tLabel.textContent = cat.label;
+  ui.trigger.disabled = locked();
+  renderMenu();
+}
+
+let menuFocusIndex = 0;
+function renderMenu() {
+  ui.menu.innerHTML = "";
+  if (!state.menuOpen) { ui.menu.style.display = "none"; return; }
+  ui.menu.style.display = "";
+  SELECTABLE.forEach((c, i) => {
+    const opt = el("div", "niche-option" + (c.id === state.niche ? " is-active" : ""));
+    opt.setAttribute("role", "option");
+    opt.setAttribute("aria-selected", c.id === state.niche ? "true" : "false");
+    opt.tabIndex = i === menuFocusIndex ? 0 : -1;
+    opt.appendChild(el("span", "niche-emoji", c.emoji));
+    opt.appendChild(el("span", "niche-label", c.label));
+    opt.addEventListener("click", () => {
+      setNiche(c.id);
+      closeMenu(true);
+    });
+    opt.addEventListener("keydown", e => {
+      switch (e.key) {
+        case "ArrowDown":
+          e.preventDefault(); menuFocusIndex = (i + 1) % SELECTABLE.length; renderMenu(); focusMenu(); break;
+        case "ArrowUp":
+          e.preventDefault(); menuFocusIndex = (i - 1 + SELECTABLE.length) % SELECTABLE.length; renderMenu(); focusMenu(); break;
+        case "Home": e.preventDefault(); menuFocusIndex = 0; renderMenu(); focusMenu(); break;
+        case "End": e.preventDefault(); menuFocusIndex = SELECTABLE.length - 1; renderMenu(); focusMenu(); break;
+        case "Enter": case " ": e.preventDefault(); setNiche(SELECTABLE[menuFocusIndex].id); closeMenu(true); break;
+        case "Escape": e.preventDefault(); closeMenu(true); break;
+        case "Tab": closeMenu(false); break;
+      }
+    });
+    ui.menu.appendChild(opt);
+  });
+}
+function focusMenu() {
+  const opts = ui.menu.querySelectorAll(".niche-option");
+  if (opts[menuFocusIndex]) opts[menuFocusIndex].focus();
+}
+function openMenu() {
+  if (locked()) return;
+  state.menuOpen = true;
+  menuFocusIndex = Math.max(0, SELECTABLE.findIndex(c => c.id === state.niche));
+  ui.nicheWrap.classList.add("is-open");
+  ui.trigger.setAttribute("aria-expanded", "true");
+  renderMenu();
+}
+function closeMenu(refocus) {
+  state.menuOpen = false;
+  ui.nicheWrap.classList.remove("is-open");
+  ui.trigger.setAttribute("aria-expanded", "false");
+  renderMenu();
+  if (refocus) ui.trigger.focus();
+}
+ui.trigger.addEventListener("click", () => state.menuOpen ? closeMenu(true) : openMenu());
+ui.trigger.addEventListener("keydown", e => {
+  if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+    e.preventDefault();
+    menuFocusIndex = Math.max(0, SELECTABLE.findIndex(c => c.id === state.niche));
+    openMenu(); focusMenu();
+  }
+});
+document.addEventListener("mousedown", e => {
+  if (state.menuOpen && !ui.nicheWrap.contains(e.target)) closeMenu(false);
+});
+
+function renderReel() {
+  const spinning = state.spinning, landed = !!state.landed;
+  ui.reel.classList.toggle("is-spinning", spinning);
+  ui.reel.classList.toggle("is-landed", landed && !spinning);
+  ui.eyebrow.textContent = spinning ? "抽取中…" : landed ? "你的题目" : "准备好了";
+  ui.srOnly.textContent = state.landed ? "你的题目：" + state.landed : "";
+  if (ui.phrase.textContent !== state.topic) {
+    ui.phrase.textContent = state.topic;
+    // 重置逐格闪动动画
+    ui.phrase.style.animation = "none";
+    void ui.phrase.offsetWidth;
+    ui.phrase.style.animation = "";
+  }
+}
+
+function renderActions() {
+  const lock = locked();
+  ui.spinBtn.disabled = lock;
+  ui.spinBtn.textContent = state.spinning ? "抽取中…" : state.landed ? "再抽一题" : "抽一题";
+  ui.startBtn.disabled = !state.landed || lock;
+  ui.startBtn.textContent = state.mode === "deep-research"
+    ? "开始 " + duration(state.research) + "研究"
+    : "开始 " + duration(state.speech) + "计时";
+  ui.sTrigger.disabled = lock;
+  if (lock && state.settingsOpen) closeSettings(false);
+  [ui.brand, ui.stageBody, ui.actionsMain].forEach(n => {
+    if (lock) n.setAttribute("inert", ""); else n.removeAttribute("inert");
+  });
+}
+
+const running = () => state.phase !== "idle";
+const locked = () => state.spinning || running();
+
+function render() {
+  renderControls();
+  renderReel();
+  renderActions();
+}
+
+/* ---------------- 抽题 ---------------- */
+let rafId = null, spinTimeout = null;
+const SPIN_MS = 4800;
+const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+function setTopicText(text) { state.topic = text; renderReel(); }
+
+function resetTopicFor(list) {
+  const t = pick(list);
+  state.reelIndex = Math.max(0, list.indexOf(t));
+  state.topic = t;
+  state.landed = null;
+  render();
+}
+
+function doSpin() {
+  if (state.spinning || running()) return;
+  primeAudio();
+  state.spinning = true;
+  state.landed = null;
+  render();
+
+  const list = topics, len = list.length;
+  const from = state.reelIndex % len;
+  const rounds = 3 + Math.floor(Math.random() * 3);
+  const extra = len > 1 ? 1 + Math.floor(Math.random() * (len - 1)) : 0;
+  const totalSteps = rounds * len + extra;
+  const landIndex = (from + totalSteps) % len;
+
+  const start = performance.now();
+  let lastStep = -1, settled = false;
+
+  const finish = () => {
+    if (settled) return;
+    settled = true;
+    if (rafId !== null) { cancelAnimationFrame(rafId); rafId = null; }
+    if (spinTimeout !== null) { clearTimeout(spinTimeout); spinTimeout = null; }
+    state.reelIndex = landIndex;
+    state.topic = list[landIndex];
+    state.landed = list[landIndex];
+    state.spinning = false;
+    render();
+    landChime();
+  };
+
+  const frame = now => {
+    const p = Math.min(1, (now - start) / SPIN_MS);
+    const eased = easeOutCubic(p);
+    const step = Math.min(totalSteps, Math.floor(eased * totalSteps));
+    if (step !== lastStep) {
+      const idx = (from + step) % len;
+      state.reelIndex = idx;
+      setTopicText(list[idx]);
+      tick(1 - p * 0.6);
+      lastStep = step;
+    }
+    if (p < 1) rafId = requestAnimationFrame(frame);
+    else finish();
+  };
+  rafId = requestAnimationFrame(frame);
+  spinTimeout = setTimeout(finish, SPIN_MS + 300);
+}
+
+/* ---------------- 模式 / 分类 ---------------- */
+function setMode(id) {
+  if (locked() || id === state.mode) return;
+  state.mode = id;
+  state.speech = id === "deep-research" ? state.speechDeep : state.speechCuff;
+  state.remaining = state.speech;
+  render();   // 只换准备时长，题目池和当前题目都保留
+}
+function setNiche(id) {
+  if (locked()) return;
+  state.niche = id;
+  topics = catById(id).topics;
+  resetTopicFor(topics);
+}
+
+/* ---------------- 口头禅分析与洗稿 ---------------- */
+const PAUSE_MARK_RE = /（停顿\s*[0-9.]+\s*秒）/g;
+// 无条件删除的填充词（中文里这些字出现基本都是语气词）
+const FILLER_ALWAYS = ["呃", "额", "嗯", "啊", "呀", "哎", "诶"];
+// 只在句尾（后跟标点/空白/结尾）删除的语气词
+const FILLER_TAIL = ["呢"];
+// 连接词后面的「呢」也是口头禅（然后呢 / 所以呢 …），删「呢」保留连接词
+const FILLER_AFTER_CONNECTIVE = /(然后|所以|但是|那么|那|接着|而且|还有|另外|就是|最后|首先|其次|总之)呢/g;
+
+function stripFillers(text, counts) {
+  const add = (w, n) => { if (n > 0) counts[w] = (counts[w] || 0) + n; };
+  let out = text;
+  for (const w of FILLER_ALWAYS) {
+    const re = new RegExp(w + "+", "g");
+    const m = out.match(re);
+    if (m) { add(w, m.length); out = out.replace(re, ""); }
+  }
+  // 句尾“呢”（后面是标点、空白或结尾）
+  const tailRe = new RegExp("(" + FILLER_TAIL.join("|") + ")(?=[，。！？、；：,.!?;:\\s]|$)", "g");
+  out = out.replace(tailRe, m => { add(m, 1); return ""; });
+  // 连接词后的“呢”（然后呢 / 所以呢 …）
+  out = out.replace(FILLER_AFTER_CONNECTIVE, (m, p1) => { add("呢", 1); return p1; });
+  return out;
+}
+
+function tidyPunct(text) {
+  const SEP = /[，。！？、；：,.!?;:]+/g;
+  return String(text || "")
+    // 连续的「分隔标点」只留优先级最高的一个；书名号/引号/括号绝不参与合并，
+    // 否则「《反精致》，」会被并成「，」，把书名号吃掉
+    .replace(SEP, run => {
+      for (const p of ["。", "！", "？", "；", "，", "、"]) if (run.includes(p)) return p;
+      return run[0];
+    })
+    .replace(/\s+/g, " ")
+    .replace(/^[\s，。！？、；：,.!?;:]+/, "")
+    .replace(/[\s，、；：]+$/, "")
+    .trim();
+}
+
+/* ---------------- 重复检测（重复句 / 高频短语） ----------------
+   白姐的原话：「我会习惯性的重复前一句话」——这是独立于口头禅的一类问题，
+   口头禅是「嗯啊呢」这种填充字，重复是整句或整段短语又说一遍，得分开统计。 */
+
+// 这些词反复出现是正常的，不算「重复」（虚词 / 连接词 / 代词 / 常用搭配）
+const REPEAT_STOPWORDS = new Set([
+  "就是", "然后", "所以", "因为", "但是", "如果", "这个", "那个", "一个", "我们", "他们", "你们", "自己",
+  "可以", "什么", "没有", "觉得", "时候", "知道", "这样", "那样", "其实", "还是", "或者", "而且", "不过",
+  "东西", "事情", "问题", "大家", "现在", "已经", "应该", "可能", "不是", "一定", "真的", "非常", "特别",
+  "很多", "有些", "怎么", "为什么", "这么", "那么", "一直", "总是", "开始", "结束", "第一", "第二", "第三",
+  "另外", "总之", "最后", "首先", "其次", "例如", "比如", "的话", "来说", "简单", "复杂", "感觉", "今天"
+]);
+
+function normForRepeat(s) {
+  return String(s || "").replace(/[\s，。！？、；：,.!?;:""''（）()《》〈〉…—·]/g, "");
+}
+
+// 分词级切分：句末标点 + 逗号顿号都算边界。
+// 白姐的「重复前一句话」常常是逗号分隔的短句（「…的时候，…的时候」），
+// 只按句号切会一个都抓不到。
+function splitClauses(t) {
+  return String(t || "").split(/(?<=[。！？!?；;，、,.\n])/).map(s => s.trim()).filter(Boolean);
+}
+
+// 虚词开头的短语不是「重复」，是正常表达（的人生 / 主义的 / 当我们 / 我们的）
+const REPEAT_BAD_HEAD = new Set("的了是在我你他她它们当如果一种这那就也都很会能要把被和与对为从到于而但却又再还只更最不没有所之其此该各每某些个".split(""));
+const REPEAT_BAD_TAIL = new Set("的了是在和与为从到于而但却又再还只更最不没所之其此".split(""));
+
+// 判断一个 n-gram 是不是「独立单位」：若它每次出现都固定跟同一个字相邻
+// （左边恒为同一个字或右边恒为同一个字），那它只是更长重复串的一个切片。
+function isMaximalGram(plain, g, n) {
+  let i = -1, found = 0, rightFixed = null, leftFixed = null, rightSame = true, leftSame = true;
+  while ((i = plain.indexOf(g, i + 1)) !== -1) {
+    found++;
+    const rc = plain[i + g.length] || "\u0000";
+    const lc = i > 0 ? plain[i - 1] : "\u0000";
+    if (rightFixed === null) rightFixed = rc; else if (rc !== rightFixed) rightSame = false;
+    if (leftFixed === null) leftFixed = lc; else if (lc !== leftFixed) leftSame = false;
+  }
+  if (found !== n) return true;      // 计数对不上（重叠情况），保守放过
+  return !(rightSame || leftSame);   // 两侧都随上下文变化才算独立单位
+}
+
+function findRepeats(text) {
+  const t = String(text || "");
+
+  // —— ① 紧邻重复（她说「习惯性重复前一句话」就是这种）：X，X ——
+  // 精确比对整段分句抓不到它——第一处常常粘在上一句尾巴上没有标点，
+  // 所以必须用「扫描 + 反向引用」的方式找到真正连说两遍的那一段。
+  const spans = [];
+  const spanSeen = new Set();
+  const spanRe = /([\u4e00-\u9fa5]{6,40})[，、,](\s*)\1(?=[，、,。！？!?；;]|$)/g;
+  let sm;
+  while ((sm = spanRe.exec(t)) !== null) {
+    const key = sm[1];
+    if (spanSeen.has(key)) continue;
+    spanSeen.add(key);
+    spans.push({ text: key, n: 2 });
+    if (spans.length >= 5) break;
+  }
+
+  // —— ② 重复分句：去标点后 ≥8 字、出现 ≥2 次 ——
+  const sentMap = new Map();
+  splitClauses(t).forEach(s => {
+    const key = normForRepeat(s);
+    if (key.length < 8) return;
+    if (spanSeen.has(key)) return;                 // 已经被 ① 报过就别重复报
+    if (!sentMap.has(key)) sentMap.set(key, { text: key, n: 0 });
+    sentMap.get(key).n++;
+  });
+  const clauses = [...sentMap.values()]
+    .filter(r => r.n >= 2)
+    .sort((a, b) => b.n - a.n || b.text.length - a.text.length)
+    .slice(0, 5);
+
+  // —— ③ 高频短语：3~8 字滑窗，出现 ≥4 次，首尾不能是虚词 ——
+  const plain = normForRepeat(t);
+  const gram = new Map();
+  for (let n = 3; n <= 8; n++) {
+    for (let i = 0; i + n <= plain.length; i++) {
+      const g = plain.slice(i, i + n);
+      gram.set(g, (gram.get(g) || 0) + 1);
+    }
+  }
+  let cands = [...gram.entries()].filter(([g, n]) =>
+    n >= 4 &&
+    !REPEAT_STOPWORDS.has(g) &&
+    !REPEAT_BAD_HEAD.has(g[0]) &&
+    !REPEAT_BAD_TAIL.has(g[g.length - 1])
+  );
+  // 跨词边界的碎片（「时候我们」「自己生活」）不是独立单位：若它每次都固定跟
+  // 同一个字相邻（左或右），说明真正重复的是更长的那串，把这个碎片丢掉。
+  cands = cands.filter(([g, n]) => isMaximalGram(plain, g, n));
+  cands = cands.filter(([g]) => !cands.some(([g2]) => g2 !== g && g2.length > g.length && g2.includes(g)));
+  const phrases = cands
+    .sort((a, b) => b[1] - a[1] || b[0].length - a[0].length)
+    .slice(0, 8)
+    .map(([w, n]) => ({ text: w, n }));
+
+  const items = [...spans, ...clauses];            // 真正「重复说了一遍」的
+  const removed = spans.length + clauses.reduce((s, r) => s + (r.n - 1), 0);
+  return { spans, clauses, items, phrases, removed, sentences: items };
+}
+
+// 洗稿的第二步：删紧邻重复 → 删重复分句 → 收尾润色（只动重复和标点，不改用词）
+function stripRepeats(text) {
+  let out = String(text || "");
+
+  // 1) 紧邻重复：X，X → 只留一个 X（可连续命中多轮）
+  const nearRe = /([\u4e00-\u9fa5]{6,40})[，、,](\s*)\1(?=[，、,。！？!?；;]|$)/g;
+  for (let i = 0; i < 4; i++) {
+    const next = out.replace(nearRe, "$1");
+    if (next === out) break;
+    out = next;
+  }
+  // 1b) 短促紧邻重复：我觉得我觉得 → 我觉得
+  out = out.replace(/([\u4e00-\u9fa5]{2,5})([，、,]?)(?=\1)/g, "");
+
+  // 2) 重复分句：同一句只留第一次出现
+  const seen = new Set();
+  out = splitClauses(out).filter(seg => {
+    const key = normForRepeat(seg);
+    if (key.length < 8) return true;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).join("");
+
+  // 3) 润色：去多余空格，末尾补句号
+  out = out.replace(/\s+/g, " ").trim();
+  if (out && !/[。！？!?；;…]$/.test(out)) out += "。";
+  return out;
+}
+
+/* ---------------- 结构重排（洗稿第二步：重组语言和结构，用词不改） ----------------
+   白姐的原话：「按我说的大意和思路，在变动较小的情况下重新组织语言，优化结构」。
+   ⚠️ 纯离线的网页读不懂语义，所以「换词、提炼金句、重写论据」做不到，也不该假装做到。
+   但下面这些是能真做的、而且效果明显的结构级操作：
+     ① 按录音里真实的停顿位置断句（她的原稿全是「（停顿 X 秒）」，一个标点都没有）
+     ② 超长句在连接词处切开
+     ③ 序数词（第一/第二/首先/其次/最后）各自独立成段
+     ④ 按长停顿分自然段
+     ⑤ 首句单独成段（开场），末句单独成段（收尾）
+   全程只动断句、段落和标点，一个字都不换。 */
+
+// 序数词 / 分点标记（出现在句首时，说明这里是一个新的分点）
+const ORDINAL_RE = /(第一|第二|第三|第四|第五|首先|其次|再次|最后|其一|其二|一是|二是|三是)/g;
+const ORDINAL_HEAD = /^(第一|第二|第三|第四|第五|首先|其次|再次|其一|其二|一是|二是|三是)/;
+
+// 句中出现这些强连接词 / 分点词时，长句可以在这里断（前提：句子已经够长）
+const MID_BREAK = /(如果你|如果|但是|所以|因为|最后|首先|其次|然后|接下来|不过|因此|于是|另外)/g;
+
+/* 半截话判断：停顿发生在这些字后面，说明话没说完 —— 该用逗号，不能用句号。
+   例：「这是一种（停顿 6.2 秒）」→ 用逗号接下去，不要断成一句。 */
+const DANGLING_TAIL = /(的|一种|这个|那个|是|在|和|或者|以及|但|而|就是|比如|例如|因为|所以|如果|虽然|而且|并且|同时|还有|有一种|一种是|就是那种|得出|发现|看到|认为|觉得|讲到|说到)$/;
+
+/* 长句在中点断开（只按强连接词，且总长 > 30 才动手）
+   ⚠️ 切点前如果是半截话（「我们可以在」+「首先…」），这里根本不该断——
+   否则会得到一句以「在」结尾的残句。 */
+function splitAtMidBreaks(s) {
+  if (s.length <= 30) return [s];
+  const cuts = [];
+  let m;
+  const re = new RegExp(MID_BREAK.source, "g");
+  while ((m = re.exec(s)) !== null) {
+    if (m.index <= 4 || m.index >= s.length - 10) continue;
+    const before = s.slice(Math.max(0, m.index - 12), m.index).replace(/[，。！？、；：\s]+$/, "");
+    if (DANGLING_TAIL.test(before)) continue;      // 半截话，别在这断
+    cuts.push(m.index);
+  }
+  if (!cuts.length) return [s];
+  // 断点之间至少隔 10 字，避免切得太碎
+  const kept = [];
+  let last = -99;
+  for (const c of cuts) { if (c - last >= 10) { kept.push(c); last = c; } }
+  if (!kept.length) return [s];
+  const parts = [];
+  let start = 0;
+  for (const c of kept) { parts.push(s.slice(start, c)); start = c; }
+  parts.push(s.slice(start));
+  return parts.map(x => x.trim()).filter(Boolean);
+}
+
+// 可以安全断句的连接词（在这些词前面断，语义不破）
+const SAFE_CUT_AT = /(但是|所以|因为|由于|其实|而是|不过|因此|从而|而且|并且|同时|也就是说|换句话说|这意味着|然后|接下来|于是|另外|比如|例如|具体来说|总结一下|归根结底|最后|首先|其次)/g;
+
+/* 超长句只在「安全断点」切开。
+   ⚠️ 绝对不能在字中间硬切 —— 曾经把「怀疑的态度」切成「怀疑的态 / 度去搜索」。
+   找不到安全断点就整句保留：宁可留一个长句（诊断里会报出来让她自己改），
+   也不能交给她一份被切坏的稿子。 */
+function splitAtSafePoints(s, limit) {
+  if (s.length <= limit) return [s];
+  const cuts = [];
+  let m;
+  const re = new RegExp(SAFE_CUT_AT.source, "g");
+  while ((m = re.exec(s)) !== null) {
+    if (m.index <= 8 || m.index >= s.length - 8) continue;
+    const before = s.slice(Math.max(0, m.index - 12), m.index).replace(/[，。！？、；：\s]+$/, "");
+    if (DANGLING_TAIL.test(before)) continue;      // 半截话，别在这断
+    cuts.push(m.index);
+  }
+  if (!cuts.length) return [s];
+  const parts = [];
+  let start = 0;
+  while (s.length - start > limit) {
+    const cand = cuts.filter(c => c > start + 12 && c - start <= limit);
+    if (!cand.length) {
+      // 附近没有合适的断点：放宽一点，取最近的（总比留一个 100 字长句强）
+      const far = cuts.filter(c => c > start + 12 && c - start <= limit * 2);
+      if (!far.length) break;
+      parts.push(s.slice(start, far[0]));
+      start = far[0];
+      continue;
+    }
+    const cut = cand[cand.length - 1];
+    parts.push(s.slice(start, cut));
+    start = cut;
+  }
+  parts.push(s.slice(start));
+  return parts.map(x => x.trim()).filter(Boolean);
+}
+
+function restructureText(raw) {
+  // ① 先删口头禅（口头禅会干扰断句判断），此时停顿标记还在
+  const tmpCounts = {};
+  let s = stripFillers(String(raw || ""), tmpCounts);
+
+  // ② 停顿标记 → 标点（\u0001 是段落占位，躲开 stripRepeats 的空白压缩）
+  //    ≥8 秒 = 段落；≥3 秒 = 句号；≥1.2 秒 = 逗号（只是换气）；更短的忽略
+  //    停顿前的字如果接不下去（「这是一种…」），一律改逗号
+  s = s.replace(/（停顿\s*([0-9.]+)\s*秒）/g, (m, secStr, offset, whole) => {
+    const sec = parseFloat(secStr);
+    const tailTxt = whole.slice(Math.max(0, offset - 12), offset).replace(/[，。！？、；：\s]+$/, "");
+    const dangling = DANGLING_TAIL.test(tailTxt);
+    // ⚠️ 停顿长 ≠ 段落结束：话没说完（「从而得出…」）就不该分段，
+    //    否则段落末尾会留一个逗号，后面又被迫改成句号，语义就断了。
+    if (sec >= 8) return dangling ? "，" : "。\u0001";
+    if (sec >= 3) return dangling ? "，" : "。";
+    if (sec >= 1.2) return "，";
+    return "";
+  }).replace(/（停顿[^）]*）/g, "");
+
+  // ③ 删重复（此时已有句号边界，分句判断更准）
+  s = stripRepeats(s);
+  s = s.replace(/\u0001/g, "\n\n");
+
+  // ④ 逐段断句 → 长句在中点断 → 超长句在安全点断 → 枚举词另起段
+  const out = [];
+  for (const para of s.split(/\n{2,}/)) {
+    const p = para.replace(/[\n\u0001]/g, "").trim();
+    if (!p) continue;
+
+    const sents = [];
+    for (const raw0 of p.split(/(?<=[。！？!?；;])/)) {
+      const sent = raw0.trim();
+      if (!sent) continue;
+      const body = sent.replace(/[。！？!?；;]+$/, "");
+      if (!body) continue;
+      const end = /[！？!?]/.test(sent.slice(-1)) ? sent.slice(-1) : "。";
+      for (const mc of splitAtMidBreaks(body)) {
+        if (mc.length <= 55) { sents.push(mc + "。"); continue; }
+        splitAtSafePoints(mc, 45).forEach(c => sents.push(c + "。"));
+      }
+    }
+
+    // 明确的枚举词（第一/第二/首先/其次…）独立成段 = 最有效的结构优化
+    let cur = [];
+    const flush = () => { if (cur.length) { out.push(cur.join("")); cur = []; } };
+    for (const sent of sents) {
+      const bare = sent.replace(/[。！？!?；;]+$/, "");
+      if (ORDINAL_HEAD.test(bare) && cur.length) flush();
+      cur.push(sent);
+    }
+    flush();
+  }
+
+  // ⑤ 收尾：统一标点
+  const paragraphs = out
+    .map(g => {
+      let x = tidyPunct(g).replace(/[，、；：]+$/, "");
+      if (x && !/[。！？!?…]$/.test(x)) x += "。";
+      return x;
+    })
+    .filter(Boolean);
+
+  return { text: paragraphs.join("\n\n"), paragraphs };
+}
+
+/* 结构骨架：这套骨架进诊断结论里的「优点 / 缺点」 */
+function detectStructure(restructuredText) {
+  const text = String(restructuredText || "");
+  const paras = text.split(/\n{2,}/).map(x => x.trim()).filter(Boolean);
+  const sents = text.split(/(?<=[。！？!?])/).map(x => x.trim()).filter(Boolean);
+  const first = paras[0] || "";
+  const lastFull = sents.length ? sents[sents.length - 1] : "";
+  // 收尾看的是最后一个「分句」的落点：长句里最后一个逗号之后那截才是真正的话尾
+  const lastClause = lastFull.replace(/[。！？!?]+$/, "").split(/[，、,；]/).pop().trim();
+  const lastSent = lastClause || lastFull.replace(/[。！？!?]+$/, "");
+
+  // 开场钩子：提问 / 直接给情境
+  const hasHook = /[？?]/.test(first.slice(0, 60)) || /(你是否|你有没有|你见过|想象一下|假如|如果我说|我问你)/.test(first.slice(0, 40));
+  // 收尾：最后一句短、且是个结论（不是半截话）
+  const hasClosing = !!lastSent && lastSent.length <= 45 && !/(并且|而且|以及|甚至还要|然后)$/.test(lastSent);
+
+  // 分点：枚举词（每种只算一次）
+  const points = [];
+  const seen = new Set();
+  let m;
+  const re = new RegExp(ORDINAL_RE.source, "g");
+  while ((m = re.exec(text)) !== null) {
+    if (seen.has(m[1])) continue;
+    seen.add(m[1]);
+    points.push({ mark: m[1], at: m.index });
+  }
+
+  // 超长句：以最终成品为准（还有多长的句子没被拆开）
+  const longSentences = sents
+    .map(x => x.replace(/[。！？!?]+$/, ""))
+    .filter(x => x.length > 45)
+    .slice(0, 3)
+    .map(x => ({ text: x.slice(0, 34) + (x.length > 34 ? "…" : ""), len: x.length }));
+
+  // 举例：显式举例词，或者开头在列举具体事例（连着两个短句，平均 ≤ 22 字）
+  const opening = sents.slice(0, 2).map(x => x.replace(/[。！？!?]+$/, ""));
+  const avgOpen = opening.length ? opening.reduce((a, x) => a + x.length, 0) / opening.length : 999;
+  const enumerating = opening.length >= 2 && avgOpen <= 22;
+  const hasExample = /(比如|例如|举个例子|就像|打个比方|好比)/.test(text)
+    || /[0-9]+(%|倍|岁|年|万|亿)/.test(text)
+    || enumerating;
+
+  return {
+    paragraphs: paras.length,
+    hasHook, hasClosing, hasExample,
+    firstText: first.slice(0, 50),
+    lastText: lastSent.slice(0, 50),
+    points, longSentences,
+    avgParaLen: paras.length ? Math.round(paras.reduce((s, p) => s + p.length, 0) / paras.length) : 0
+  };
+}
+
+/* 主题关键词：离线能做的是「高频实词」，不是语义概括（别假装读懂了） */
+const TOPIC_STOP = new Set([
+  ...REPEAT_STOPWORDS,
+  "我们", "你们", "他们", "自己", "这种", "那种", "一种", "这些", "那些", "一些", "所有", "全部",
+  "非常", "特别", "比较", "更加", "越来越", "可能", "需要", "可以", "应该", "必须", "能够", "得到",
+  "事情", "方面", "情况", "过程", "结果", "内容", "部分", "地方", "时间", "时候", "现在", "当今",
+  "因为", "所以", "但是", "如果", "虽然", "即使", "而且", "并且", "然后", "接着", "最后", "首先"
+]);
+function extractKeywords(text, limit) {
+  const plain = String(text || "").replace(/[^\u4e00-\u9fa5]/g, "");
+  const cnt = new Map();
+  for (let n = 2; n <= 6; n++) {
+    for (let i = 0; i + n <= plain.length; i++) {
+      const g = plain.slice(i, i + n);
+      if (TOPIC_STOP.has(g)) continue;
+      if (REPEAT_BAD_HEAD.has(g[0]) || REPEAT_BAD_TAIL.has(g[g.length - 1])) continue;
+      cnt.set(g, (cnt.get(g) || 0) + 1);
+    }
+  }
+  let cands = [...cnt.entries()].filter(([g, n]) => n >= 2 && g.length >= 2);
+  // 只留最长的：被更长候选包含的短候选丢掉（「批判性思维」赢过「批判」「思维」）
+  cands = cands.filter(([g]) => !cands.some(([g2, n2]) => g2 !== g && g2.length > g.length && g2.includes(g) && n2 >= 2));
+  return cands
+    .sort((a, b) => b[1] * b[0].length - a[1] * a[0].length)
+    .slice(0, limit || 5)
+    .map(([text, n]) => ({ text, n }));
+}
+
+/* 诊断结论：主题 / 优点 / 缺点 —— 每条都带证据，不说空话 */
+function buildDiagnosis(stats, spokenSec, plannedSec, timing, st) {
+  const per100 = stats.rawWords > 0 ? stats.fillerTotal / stats.rawWords * 100 : 0;
+  const wpm = spokenSec > 5 ? Math.round(stats.rawWords / spokenSec * 60) : 0;
+  const repItems = (stats.repeats && stats.repeats.items) || [];
+  const repPhrases = (stats.repeats && stats.repeats.phrases) || [];
+
+  const keywords = extractKeywords(stats.sourceText || "", 5);
+
+  const pros = [];
+  const cons = [];
+
+  // —— 结构 ——
+  if (st.hasHook) pros.push({ t: "开场有钩子", e: "第一句就把人拉进来：「" + st.firstText.slice(0, 22) + "…」" });
+  else cons.push({ t: "开场没有钩子", e: "开头是平铺直叙，听众不知道为什么要听下去。第一句换成一个提问或一个具体场景会好很多。" });
+
+  if (st.points.length >= 2) {
+    pros.push({ t: "有明确分点（" + st.points.length + " 步）", e: "用了「" + st.points.map(p => p.mark).join("」「") + "」，听众跟得住" });
+  } else {
+    cons.push({ t: "没有分点", e: "全程是一口气讲下来的，没有一个「第一、第二」。加 2-3 个序数词，听众才有路标。" });
+  }
+
+  if (st.hasClosing) pros.push({ t: "收尾有落点", e: "最后一句收在「" + st.lastText.slice(0, 22) + "…」" });
+  else cons.push({ t: "收尾偏长、没有金句", e: "结尾还在解释，没有一句能让人记住的话。留一句短的下结论。" });
+
+  if (st.paragraphs >= 3) pros.push({ t: "段落层次清楚（" + st.paragraphs + " 段）", e: "平均每段 " + st.avgParaLen + " 字" });
+
+  if (st.hasExample) pros.push({ t: "有具体例子", e: "不是空讲道理，有能落地的东西" });
+  else cons.push({ t: "缺具体例子", e: "通篇是抽象论述，没有一个「比如……」。一个具体案例抵三句道理。" });
+
+  // —— 语言 ——
+  if (per100 <= 1) pros.push({ t: "口头禅控制得好", e: per100.toFixed(1) + " 处/百字，几乎听不出来" });
+  else if (per100 > 2) cons.push({ t: "口头禅偏多", e: per100.toFixed(1) + " 处/百字（" + stats.fillerTotal + " 处），听众会分神" });
+
+  if (repItems.length) cons.push({ t: "有整段重复", e: repItems.length + " 处把同一段话说了两遍，最明显是「" + (repItems[0].text || "").slice(0, 16) + "」" });
+  else pros.push({ t: "没有整段重复", e: "同一段话没有说两遍" });
+
+  if (st.longSentences.length) cons.push({ t: "句子太长（" + st.longSentences.length + " 处超 50 字）", e: "最长一句 " + st.longSentences[0].len + " 字，一口气讲完听众接不住" });
+
+  // —— 时间 / 语速 ——
+  if (timing && timing.punctual === true && plannedSec) pros.push({ t: "时间控制到位", e: "在 " + duration(plannedSec) + "内收住了" });
+  if (timing && timing.punctual === false) cons.push({ t: "超时", e: "超出 " + duration(timing.overtimeSec || 0) + "，说明内容没压缩过" });
+  if (wpm && wpm >= 170 && wpm <= 300) pros.push({ t: "语速舒服", e: wpm + " 字/分钟，不快不慢" });
+  else if (wpm > 330) cons.push({ t: "语速偏快", e: wpm + " 字/分钟，听众跟不上" });
+  else if (wpm && wpm < 130) cons.push({ t: "语速偏慢", e: wpm + " 字/分钟，容易显得没底气" });
+
+  if (stats.pauses > 5) cons.push({ t: "长停顿偏多", e: stats.pauses + " 次超过 1.5 秒，思路在找词" });
+
+  return {
+    keywords,
+    pros: pros.slice(0, 5),
+    cons: cons.slice(0, 5),
+    repPhrases,
+    per100, wpm
+  };
+}
+
+function analyzeSpeech(text, opts) {
+  const light = !!(opts && opts.light);   // 实时输入时只要口头禅/停顿，不必每次跑结构重排
+  const counts = {};
+  let t = String(text || "");
+  // 停顿标记先取出来
+  const pauseMarks = t.match(PAUSE_MARK_RE) || [];
+  const pauses = pauseMarks.length;
+  t = t.replace(PAUSE_MARK_RE, " ");
+  // 重复要在删口头禅之前统计——否则「嗯」这类填充字会干扰滑窗
+  const repeats = findRepeats(t);
+  let body = stripFillers(t, counts);
+  body = stripRepeats(body);          // 洗稿：删重复 + 收尾润色（第一版，只删）
+  const cleaned = tidyPunct(body);
+  // 第二版：结构重排（断句 / 分段 / 分点），用词不改
+  const restructured = light ? { text: "", paragraphs: [] } : restructureText(text);
+  const structure = light ? null : detectStructure(restructured.text);
+  const fillerTotal = Object.values(counts).reduce((s, n) => s + n, 0);
+  const words = cleaned.replace(/\s/g, "").length;
+  const raw = text.replace(PAUSE_MARK_RE, "").replace(/\s/g, "").length;
+  return {
+    counts, fillerTotal, pauses, cleaned, words, rawWords: raw, repeats,
+    restructured: restructured.text, paragraphs: restructured.paragraphs,
+    structure, sourceText: cleaned
+  };
+}
+
+
+function scoreSpeech(stats, spokenSec, timing) {
+  const per100 = stats.rawWords > 0 ? stats.fillerTotal / stats.rawWords * 100 : 0;
+  if (stats.rawWords < 15) {
+    return { score: 0, per100, wpm: 0, parts: [], reasons: ["内容太短，还不构成一次完整输出，先别管分数"] };
+  }
+  const parts = [];
+  let score = 0;
+
+  // ① 口头禅密度（满分 3）
+  let fillerPt;
+  if (per100 <= 0.5) fillerPt = 3;
+  else if (per100 <= 1.5) fillerPt = 2;
+  else if (per100 <= 3) fillerPt = 1;
+  else fillerPt = 0;
+  score += fillerPt;
+  parts.push({ label: "口头禅密度", detail: per100.toFixed(1) + " 处/百字", pt: fillerPt, max: 3 });
+
+  // ② 长停顿（满分 1）
+  const pausePt = stats.pauses <= 2 ? 1 : 0;
+  score += pausePt;
+  parts.push({ label: "长停顿", detail: stats.pauses + " 次（超 1.5 秒）", pt: pausePt, max: 1 });
+
+  // ③ 语速（满分 1）
+  const wpm = spokenSec > 5 ? Math.round(stats.rawWords / spokenSec * 60) : 0;
+  let wpmPt = 0;
+  if (wpm >= 170 && wpm <= 300) wpmPt = 1;
+  score += wpmPt;
+  parts.push({ label: "语速", detail: wpm ? wpm + " 字/分钟" : "时长太短，测不出", pt: wpmPt, max: 1 });
+
+  // ④ 重复（满分 3）——「习惯性重复前一句话」是独立于口头禅的另一类问题
+  const rep = stats.repeats || { items: [], phrases: [] };
+  const repSent = (rep.items || []).length, repPhr = (rep.phrases || []).length;
+  let repPt;
+  if (repSent === 0) repPt = repPhr <= 2 ? 3 : repPhr <= 4 ? 2 : 1;
+  else if (repSent === 1) repPt = 2;
+  else if (repSent === 2) repPt = 1;
+  else repPt = 0;
+  score += repPt;
+  parts.push({
+    label: "重复",
+    detail: repSent + " 处整段重复 · " + repPhr + " 个高频短语",
+    pt: repPt, max: 3
+  });
+
+  // ⑤ 时间控制（满分 2，可扣到 -3）——在标准时间内说完是硬指标
+  let timePt = 0, timeDetail = "这一轮没走计时，不计入";
+  if (timing && timing.plannedSec > 0) {
+    const over = Math.max(0, timing.overtimeSec || 0);
+    const ratio = spokenSec / timing.plannedSec;
+    if (over > 0) {
+      if (over > timing.plannedSec * 2) { timePt = -3; timeDetail = "超时 " + duration(over) + "，超过标准时长 2 倍以上"; }
+      else if (over > timing.plannedSec * 0.5) { timePt = -2; timeDetail = "超时 " + duration(over) + "，超出标准时长一半以上"; }
+      else if (over > timing.plannedSec * 0.2) { timePt = -1; timeDetail = "超时 " + duration(over); }
+      else { timePt = 0; timeDetail = "超时 " + duration(over) + "（轻微擦线）"; }
+    } else if (ratio >= 0.8) { timePt = 2; timeDetail = "准点收住（标准 " + duration(timing.plannedSec) + "）"; }
+    else if (ratio >= 0.5) { timePt = 1; timeDetail = "准点，但只用了标准时长的 " + Math.round(ratio * 100) + "%"; }
+    else { timePt = 0; timeDetail = "只讲了 " + duration(spokenSec) + "，标准是 " + duration(timing.plannedSec); }
+  }
+  score += timePt;
+  parts.push({ label: "时间控制", detail: timeDetail, pt: timePt, max: 2 });
+
+  return { score: Math.min(10, Math.max(1, Math.round(score))), per100, wpm, parts, reasons: [] };
+}
+
+function buildAdvice(stats, spokenSec, plannedSec) {
+  const tips = [];
+  const per100 = stats.rawWords > 0 ? stats.fillerTotal / stats.rawWords * 100 : 0;
+  const top = Object.entries(stats.counts).sort((a, b) => b[1] - a[1]).slice(0, 3);
+  if (stats.fillerTotal === 0 && stats.rawWords >= 15) {
+    tips.push("这轮几乎没有口头禅，保持这个状态——不确定的时候宁可停半拍，也不要用「额」去填。");
+  } else if (top.length) {
+    const [word, n] = top[0];
+    tips.push(`最高频的口头禅是「${word}」，说了 ${n} 次，大约每 ${Math.max(1, Math.round(spokenSec / n))} 秒一次。下次想说它的时候，试试闭嘴半秒，停顿比填充词更从容。`);
+  }
+  if (stats.pauses >= 6) {
+    tips.push(`出现了 ${stats.pauses} 次明显停顿（超过 1.5 秒），说明中途在找词。开头先用一句话亮观点，中间就不容易卡。`);
+  } else if (stats.pauses <= 2 && stats.rawWords >= 15) {
+    tips.push("几乎没有长停顿，节奏很稳。");
+  }
+  const wpm = spokenSec > 5 ? Math.round(stats.rawWords / spokenSec * 60) : 0;
+  if (wpm > 330) tips.push(`语速约 ${wpm} 字/分钟，偏快。讲完一个点稍作停顿，听众更容易接住。`);
+  else if (wpm > 0 && wpm < 130) tips.push(`语速约 ${wpm} 字/分钟，偏慢，容易显得没底气。可以试试只讲核心的一两个点，讲透比讲全重要。`);
+
+  // 重复：整段重复比短语重复严重得多，优先提醒
+  const rep = stats.repeats || { items: [], phrases: [] };
+  const repItems = rep.items || [];
+  if (repItems.length) {
+    const worst = repItems.slice().sort((a, b) => b.n - a.n || b.text.length - a.text.length)[0];
+    tips.push(`有 ${repItems.length} 处把同一段话说了两遍以上，最明显的是「${worst.text.slice(0, 18)}${worst.text.length > 18 ? "…" : ""}」说了 ${worst.n} 遍。习惯性重复上一句，通常是脑子在等下一句——下次卡住时改成停半秒再开口，而不是把上一句再说一遍。`);
+  } else if ((rep.phrases || []).length) {
+    const p = rep.phrases[0];
+    tips.push(`「${p.text}」在几分钟里出现了 ${p.n} 次。同一个说法反复用，听众会觉得你在原地打转——第二遍就换个词，或者直接展开一个新点。`);
+  }
+
+  if (plannedSec && spokenSec < plannedSec * 0.4) {
+    tips.push(`这轮只讲了约 ${Math.round(spokenSec)} 秒（计划 ${Math.round(plannedSec)} 秒），内容还可以再展开一层：是什么 → 为什么 → 怎么办。`);
+  }
+  if (stats.fillerTotal > 0 && per100 > 3) {
+    tips.push(`口头禅密度偏高（每百字 ${per100.toFixed(1)} 个）。练法：刻意把一句结尾说利索，说满 10 个字再换气，坚持两轮会明显改善。`);
+  }
+  if (!tips.length) tips.push("整体节奏不错。下次可以给自己加码：同一个题讲第二轮，看看能不能少一半口头禅。");
+  return tips.slice(0, 5);
+}
+
+/* ---------------- 练习历史 ---------------- */
+const HISTORY_KEY = PREFIX + "history";
+function loadHistory() {
+  try { return JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; }
+  catch (e) { return []; }
+}
+function saveHistoryEntry(entry) {
+  try {
+    const list = loadHistory();
+    list.unshift(entry);
+    while (list.length > 300) list.pop();
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(list));
+  } catch (e) {}
+}
+function deleteHistoryEntry(id) {
+  try {
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(loadHistory().filter(e => e.id !== id)));
+  } catch (e) {}
+}
+function clearAllHistory() {
+  try { localStorage.setItem(HISTORY_KEY, "[]"); } catch (e) {}
+}
+
+/* ---------------- 记录跨设备同步 ----------------
+   通道：JSONBin.io（免费额度：每月 1 万次请求、单个 bin 100KB）。
+   为什么是它——免注册的云全部实测失败了，别回头再试：
+     · jsonblob.com      Cloudflare 403，浏览器 fetch 直接拒
+     · kvdb.io           要真实邮箱 + 验证
+     · textdb.online     GET 有 CORS 头，但写接口没有 → 浏览器写不了
+     · npoint.io         匿名建 bin 一律 500
+     · api.restful-api.dev  支持 file:// 跨域，但**单条负载超 ~1.5KB 就 500**，装不下历史
+     · 飞书开放平台       预检不返回 CORS 头，网页直连不了
+   JSONBin 是唯一实测「Origin: null 也能读写 + 容量够」的（预检返回 ACAO:* 且允许 X-Master-Key）。
+
+   设计要点（很重要，别改坏）：
+     1. 本地 localStorage 永远是主存储。云只是「合并通道」——云挂了/额度用尽/数据被清，
+        本地一条都不会少，导出备份随时能救回来。
+     2. 同步码 = 云上那个 bin 的 id。谁知道码谁能看到这份记录，所以天然隔离：
+        朋友的设备首次同步会生成自己的新 bin，记录绝不会混到一起。
+     3. 合并按记录 id 去重求并集，同 id 取时间较新的。
+     4. 免费版单 bin 只有 100KB，所以按预算从新到旧裁剪——**云端只保留最近的若干条**，
+        更早的只在本机，靠「导出备份 / 导入合并」搬运。这一点必须在状态栏如实告诉她。
+-------------------------------------------------------------- */
+const BIN_API = "https://api.jsonbin.io/v3/b";
+const BIN_HELP = "https://jsonbin.io";
+const SYNC_KEY = PREFIX + "synccode";        // bin id
+const SYNC_MASTER = PREFIX + "syncmaster";   // JSONBin Master Key
+
+function loadSyncCode() { try { return localStorage.getItem(SYNC_KEY) || ""; } catch (e) { return ""; } }
+function setSyncCode(c) {
+  try { c ? localStorage.setItem(SYNC_KEY, c) : localStorage.removeItem(SYNC_KEY); } catch (e) {}
+}
+function loadMasterKey() { try { return localStorage.getItem(SYNC_MASTER) || ""; } catch (e) { return ""; } }
+function setMasterKey(k) {
+  try { k ? localStorage.setItem(SYNC_MASTER, k.trim()) : localStorage.removeItem(SYNC_MASTER); } catch (e) {}
+}
+
+// 合并：按 id 求并集；同 id 取 date 较新的，date 相同则取正文更长的
+// （云上那份正文可能被截断过，不能让截断版覆盖本地全文）
+function mergeEntries(local, remote) {
+  const map = new Map();
+  [...(remote || []), ...(local || [])].forEach(e => {
+    if (!e || !e.id) return;
+    const prev = map.get(e.id);
+    if (!prev) { map.set(e.id, e); return; }
+    const tNew = Date.parse(e.date || 0) || 0, tOld = Date.parse(prev.date || 0) || 0;
+    const longer = (e.text || "").length >= (prev.text || "").length;
+    if (tNew > tOld || (tNew === tOld && longer)) map.set(e.id, e);
+  });
+  return [...map.values()].sort((a, b) => (Date.parse(b.date || 0) || 0) - (Date.parse(a.date || 0) || 0));
+}
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const bytesOf = obj => { try { return new Blob([JSON.stringify(obj)]).size; } catch (e) { return JSON.stringify(obj).length; } };
+
+// 跨境访问确实会抖（SSL 握手超时 / 偶发 5xx），所有请求带退避重试
+async function fetchRetry(url, opts, tries = 3) {
+  let lastErr = null;
+  for (let i = 0; i < tries; i++) {
+    try {
+      const r = await fetch(url, opts);
+      if (r.status >= 500 && i < tries - 1) { await sleep(800 * (i + 1)); continue; }
+      return r;
+    } catch (e) {
+      lastErr = e;
+      if (i < tries - 1) await sleep(800 * (i + 1));
+    }
+  }
+  throw (lastErr || new Error("网络请求失败"));
+}
+
+function binHeaders(extra) {
+  const h = Object.assign({ "X-Master-Key": loadMasterKey() }, extra || {});
+  return h;
+}
+
+async function cloudRead(id) {
+  const r = await fetchRetry(BIN_API + "/" + encodeURIComponent(id) + "/latest", {
+    headers: binHeaders({ "X-Bin-Meta": "false" })
+  });
+  if (r.status === 404) return null;
+  if (r.status === 401 || r.status === 403) throw new Error("Master Key 不对，或这不是你自己的 bin");
+  if (!r.ok) throw new Error("HTTP " + r.status);
+  const j = await r.json();
+  // X-Bin-Meta:false 时直接返回 record；万一被忽略则包在 record 里
+  return (j && j.record) || j || null;
+}
+async function cloudCreate(payload) {
+  const r = await fetchRetry(BIN_API, {
+    method: "POST",
+    headers: binHeaders({ "Content-Type": "application/json", "X-Bin-Name": "unprompted-history", "X-Bin-Private": "true" }),
+    body: JSON.stringify(payload)
+  });
+  if (r.status === 401 || r.status === 403) throw new Error("Master Key 无效，检查一下有没有粘全");
+  if (!r.ok) throw new Error("HTTP " + r.status);
+  const j = await r.json();
+  return (j.metadata && j.metadata.id) || j.id;
+}
+async function cloudWrite(id, payload) {
+  const r = await fetchRetry(BIN_API + "/" + encodeURIComponent(id), {
+    method: "PUT",
+    headers: binHeaders({ "Content-Type": "application/json" }),
+    body: JSON.stringify(payload)
+  });
+  if (r.status === 404) throw new Error("云端 bin 不见了（可能被清理或删了）");
+  if (r.status === 401 || r.status === 403) throw new Error("Master Key 不对");
+  if (!r.ok) throw new Error("HTTP " + r.status);
+}
+
+// 免费版单 bin 上限 100KB → 预算 95KB，从新到旧装，装不下的不传（本地永远全量）
+const CLOUD_BUDGET = 95 * 1024;
+function slimForCloud(entries) {
+  const CAP = 2000;   // 单条正文最多 2000 字
+  const cut = s => (typeof s === "string" && s.length > CAP ? s.slice(0, CAP) + "…" : s);
+  const out = [];
+  let used = 200;     // 留点余量给外层字段
+  for (const e of entries) {
+    const copy = Object.assign({}, e);
+    if (copy.text) copy.text = cut(copy.text);
+    if (copy.analysis) {
+      // 洗稿文本是**能从原稿重算**的（analyzeSpeech(text).cleaned），
+      // 没必要占云端空间——省下的额度能多存一倍的记录。
+      const a = Object.assign({}, copy.analysis);
+      delete a.cleaned;
+      copy.analysis = a;
+    }
+    const size = bytesOf(copy) + 2;
+    if (used + size > CLOUD_BUDGET) break;
+    out.push(copy);
+    used += size;
+  }
+  return { entries: out, kept: out.length, total: entries.length, truncated: out.length < entries.length };
+}
+
+let syncing = false;
+async function syncNow() {
+  if (syncing) return;
+  syncing = true;
+  setSyncStatus("正在同步……");
+  try {
+    if (!loadMasterKey()) {
+      setSyncStatus("还没配置云账号：先在下面填 JSONBin 的 Master Key（免费注册，一次搞定），再点同步。");
+      return;
+    }
+    const local = loadHistory();
+    let code = loadSyncCode();
+    let remote = null;
+    let codeRotated = false;
+
+    if (code) {
+      remote = await cloudRead(code);
+      if (remote === null) {
+        // 这个 bin 在云端不存在了（第一次用 / 被清 / 被删）。
+        // 这时不能 PUT（会 404），必须重新建一个。
+        codeRotated = true;
+        code = "";
+      }
+    }
+
+    const merged = mergeEntries(local, remote ? (remote.entries || []) : []);
+    const slim = slimForCloud(merged);
+    const payload = { ver: 1, updatedAt: new Date().toISOString(), entries: slim.entries };
+
+    if (!code) { code = await cloudCreate(payload); setSyncCode(code); }
+    else { await cloudWrite(code, payload); }
+
+    try { localStorage.setItem(HISTORY_KEY, JSON.stringify(merged.slice(0, 300))); } catch (e) {}
+    renderHistoryList();
+    if (historyEl && historyEl._codeInput) historyEl._codeInput.value = code;
+
+    const added = merged.length - local.length;
+    const parts = ["同步完成", "本机共 " + merged.length + " 条"];
+    if (added > 0) parts.push("从别的设备合并进来 " + added + " 条");
+    else parts.push("已是最新");
+    if (slim.truncated) parts.push("云端按 100KB 免费额度只存了最近 " + slim.kept + " 条，更早的只在本机——想全量搬运请用「导出备份 / 导入合并」");
+    if (codeRotated) parts.push("※ 原来的同步码在云端已不存在，已生成新码——请把新码填到其他设备上");
+    setSyncStatus(parts.join(" · "));
+  } catch (e) {
+    setSyncStatus("同步失败：" + (e.message || e) + "。本地记录没动，放心。");
+  } finally {
+    syncing = false;
+  }
+}
+
+function exportHistory() {
+  const data = { app: "unprompted", ver: 1, exportedAt: new Date().toISOString(), entries: loadHistory() };
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "即兴演讲练习记录-" + new Date().toISOString().slice(0, 10) + ".json";
+  a.style.display = "none";
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => { a.remove(); URL.revokeObjectURL(url); }, 4000);
+  setSyncStatus("已导出 " + loadHistory().length + " 条记录。存到飞书/网盘，在另一台设备导入即可合并。");
+}
+
+function importHistoryFile(file) {
+  if (!file) return;
+  const fr = new FileReader();
+  fr.onload = () => {
+    try {
+      const j = JSON.parse(fr.result);
+      const incoming = Array.isArray(j) ? j : (j.entries || []);
+      if (!incoming.length) { setSyncStatus("这个文件里没有记录。"); return; }
+      const before = loadHistory().length;
+      const merged = mergeEntries(loadHistory(), incoming);
+      localStorage.setItem(HISTORY_KEY, JSON.stringify(merged.slice(0, 300)));
+      renderHistoryList();
+      setSyncStatus("导入完成 · 原 " + before + " 条 → 现 " + merged.length + " 条（按记录去重合并）");
+    } catch (e) {
+      setSyncStatus("导入失败：文件不是本工具导出的记录文件。");
+    }
+  };
+  fr.readAsText(file);
+}
+
+/* ---------------- 计时 ---------------- */
+let intervalId = null;
+function stopTimer() {
+  if (intervalId !== null) { clearInterval(intervalId); intervalId = null; }
+}
+function startTimer(seconds, onEnd) {
+  stopTimer();
+  state.remaining = seconds;
+  renderOverlay();
+  const endAt = Date.now() + seconds * 1000;
+  intervalId = setInterval(() => {
+    const left = Math.max(0, Math.ceil((endAt - Date.now()) / 1000));
+    state.remaining = left;
+    renderOverlay();
+    if (left <= 0) { stopTimer(); onEnd(); }
+  }, 100);
+}
+
+async function startSpeech() {
+  state.phase = "speech";
+  state.overtime = 0;
+  state.remaining = state.speech;
+  renderOverlay();
+
+  // 先把麦克风拿到手，再开始计时。
+  // 否则用户讲完一整轮才发现没录上，等于白讲一遍（手机内置浏览器就是这种情况）。
+  setCaptureState("starting", "正在打开麦克风……首次会弹权限窗，请点「允许」。");
+  await Promise.race([beginCapture(), sleep(20000)]);
+  if (state.phase !== "speech") return;      // 等待授权期间被放弃/关闭了
+
+  if (session) {
+    session.speechStartedAt = Date.now();
+    session.speechPlannedSec = state.speech;
+  }
+  renderOverlay();
+  startTimer(state.speech, () => {
+    // 时间到：响铃提示，但不打断——进入超时继续计，说完自己点「我说完了」
+    finishChime();
+    startOvertime();
+  });
+}
+function startOvertime() {
+  stopTimer();
+  state.phase = "overtime";
+  state.overtime = 0;
+  renderOverlay();
+  const startAt = Date.now();
+  intervalId = setInterval(() => {
+    state.overtime = Math.floor((Date.now() - startAt) / 1000);
+    renderOverlay();
+  }, 250);
+}
+function finishSpeech() {
+  stopTimer();
+  const punctual = state.phase === "speech";   // 倒计时归零前就说完了
+  state.phase = "done";
+  state.remaining = 0;
+  state.overtime = 0;
+  if (session) {
+    session.spokenSec = Math.round((Date.now() - session.speechStartedAt) / 1000);
+    session.overtimeSec = Math.max(0, session.spokenSec - (session.speechPlannedSec || state.speech));
+    session.punctual = punctual || session.overtimeSec <= 0;
+    session.completed = true;
+  }
+  endCapture();     // 说完即停录：复盘直接分析刚才这一遍
+  renderOverlay();
+  // 等最后一批识别结果回灌（rec.stop 是异步的），再自动进复盘
+  setTimeout(() => { if (session && state.phase === "done" && !reviewOpen) openReview(); }, 450);
+}
+function goReady() {
+  stopTimer();
+  state.phase = "ready";
+  state.remaining = state.speech;
+  renderOverlay();
+  landChime();
+}
+function startFlow() {
+  if (!state.landed || locked()) return;
+  primeAudio();
+  session = {
+    id: Date.now() + "-" + Math.random().toString(36).slice(2, 7),
+    date: new Date().toISOString(),
+    topic: state.landed,
+    categoryLabel: catById(state.niche).label,
+    modeLabel: modeById(state.mode).label,
+    plannedSec: state.mode === "deep-research" ? state.research + state.speech : state.speech,
+    spokenSec: 0,
+    text: "",
+    analysis: null,
+    score: null,
+    completed: false,
+    saved: false,
+    speechStartedAt: 0,
+    speechPlannedSec: 0,
+    overtimeSec: 0,
+    punctual: null
+  };
+  if (state.mode === "deep-research") {
+    state.phase = "research";
+    renderOverlay();
+    startTimer(state.research, () => { goReady(); });
+  } else {
+    startSpeech();
+  }
+}
+function finishSession() {
+  // 计时完整走完（done）才算完成一轮，才写入历史；中途放弃不记录
+  if (session && !session.saved) {
+    session.saved = true;
+    saveHistoryEntry({
+      id: session.id, date: session.date, topic: session.topic,
+      categoryLabel: session.categoryLabel, modeLabel: session.modeLabel,
+      plannedSec: session.plannedSec, spokenSec: session.spokenSec,
+      punctual: session.punctual, overtimeSec: session.overtimeSec,
+      text: session.text, analysis: session.analysis, score: session.score
+    });
+  }
+  stopReview();
+  endCapture();          // 放弃/收工：一定要关掉麦克风，别让录音在后台空转
+  session = null;
+  stopTimer();
+  state.phase = "idle";
+  state.overtime = 0;
+  state.remaining = state.speech;
+  renderOverlay();
+}
+function closeTimer() {
+  if (state.phase === "done" && session) {
+    session.completed = true;
+    finishSession();
+    return;
+  }
+  if (state.phase === "research" || state.phase === "ready") {
+    if (!confirm("这一轮还没开讲。关闭后不会计入历史，抽到的题目也会清掉。确定关闭吗？")) return;
+  } else if (state.phase === "speech" || state.phase === "overtime") {
+    if (!confirm("这轮还没点「我说完了」，放弃后不会计入历史。确定放弃吗？")) return;
+  }
+  stopReview();
+  endCapture();          // 放弃/收工：一定要关掉麦克风，别让录音在后台空转
+  session = null;
+  stopTimer();
+  state.phase = "idle";
+  state.overtime = 0;
+  state.remaining = state.speech;
+  renderOverlay();
+}
+
+/* ---------------- 计时浮层 ---------------- */
+function stageCount() {
+  if (state.phase === "done" || state.phase === "overtime" || state.speech <= 0) return STAGES.length;
+  const elapsed = state.speech - state.remaining;
+  const seg = state.speech / STAGES.length;
+  if (elapsed >= seg * 2) return 3;
+  if (elapsed >= seg) return 2;
+  return 1;
+}
+function ringProgress() {
+  const isResearch = state.phase === "research";
+  const total = isResearch ? state.research : state.speech;
+  if (state.phase === "ready") return 0;
+  if (state.phase === "overtime" || state.phase === "done") return 1;
+  if (!running()) return 0;
+  if (total <= 0) return 1;
+  return clamp(1 - state.remaining / total, 0, 1);
+}
+function overlayLabel() {
+  if (state.phase === "research") return "研究计时";
+  if (state.phase === "ready") return "准备开讲";
+  if (state.phase === "overtime") return "超时加时";
+  return "演讲计时";
+}
+function overlayStatus() {
+  if (state.phase === "research") return "研究中。";
+  if (state.phase === "ready") return "研究结束。";
+  if (state.phase === "overtime") return "时间到。不打断，继续说——说完点「我说完了」。";
+  if (state.phase === "done") return "时间到。";
+  return "开讲。";
+}
+
+function renderOverlay() {
+  if (!running()) {
+    if (overlay) { overlay.remove(); overlay = null; }
+    releaseWake();
+    render();
+    return;
+  }
+  const isResearch = state.phase === "research";
+  const showStages = state.mode === "off-the-cuff" && (state.phase === "speech" || state.phase === "overtime" || state.phase === "done");
+
+  if (!overlay) {
+    overlay = el("div", "timer-overlay");
+    overlay.setAttribute("role", "dialog");
+    overlay.setAttribute("aria-modal", "true");
+    const inner = el("div", "timer-overlay-inner");
+    overlay.appendChild(inner);
+    ui.overlayHost.appendChild(overlay);
+    overlay._built = false;
+  }
+  overlay.className = "timer-overlay " + (state.phase === "done" ? "is-done" : state.phase === "overtime" ? "is-overtime" : "is-live") + (isResearch ? " is-research" : "");
+  overlay.setAttribute("aria-label", overlayLabel());
+
+  const inner = overlay.firstChild;
+  if (!overlay._built) {
+    inner.innerHTML = "";
+    overlay.topic = el("p", "timer-topic");
+    overlay.phase = el("p", "timer-phase", "研究中");
+    overlay.stages = el("ol", "speech-stages");
+    overlay.stages.setAttribute("aria-label", "演讲结构");
+    overlay.ring = el("div", "timer-ring");
+    overlay.ring.setAttribute("role", "timer");
+    overlay.digits = el("span", "timer-digits");
+    overlay.ring.appendChild(overlay.digits);
+    overlay.status = el("p", "timer-status");
+    overlay.status.setAttribute("aria-live", "polite");
+    overlay.recChip = el("button", "timer-rechip", "○ 未录音");
+    overlay.recChip.type = "button";
+    overlay.recChip.addEventListener("click", () => { primeAudio(); toggleCapture(); });
+    // 录音失败时把原因写在浮层上——只在复盘面板里说明，用户在计时界面是看不到的
+    overlay.recNote = el("p", "timer-recnote");
+    overlay.next = el("p", "timer-next");
+    overlay.acts = el("div", "timer-actions");
+
+    overlay.researchDone = el("button", "btn primary", "研究完毕");
+    overlay.researchDone.type = "button";
+    overlay.researchDone.addEventListener("click", () => { primeAudio(); goReady(); });
+
+    overlay.readyBtn = el("button", "btn primary", "我准备好开讲了");
+    overlay.readyBtn.type = "button";
+    overlay.readyBtn.addEventListener("click", () => { primeAudio(); startSpeech(); });
+
+    overlay.closeBtn = el("button", "btn ghost", "关闭");
+    overlay.closeBtn.type = "button";
+    overlay.closeBtn.addEventListener("click", closeTimer);
+
+    overlay.doneBtn = el("button", "btn primary", "我说完了");
+    overlay.doneBtn.type = "button";
+    overlay.doneBtn.addEventListener("click", () => { primeAudio(); finishSpeech(); });
+
+    overlay.reviewBtn = el("button", "btn primary", "输出复盘 · 找口头禅");
+    overlay.reviewBtn.type = "button";
+    overlay.reviewBtn.addEventListener("click", openReview);
+
+    overlay.acts.appendChild(overlay.researchDone);
+    overlay.acts.appendChild(overlay.readyBtn);
+    overlay.acts.appendChild(overlay.doneBtn);
+    overlay.acts.appendChild(overlay.reviewBtn);
+    overlay.acts.appendChild(overlay.closeBtn);
+
+    inner.appendChild(overlay.topic);
+    inner.appendChild(overlay.phase);
+    inner.appendChild(overlay.stages);
+    inner.appendChild(overlay.ring);
+    inner.appendChild(overlay.status);
+    inner.appendChild(overlay.recChip);
+    inner.appendChild(overlay.recNote);
+    inner.appendChild(overlay.next);
+    inner.appendChild(overlay.acts);
+    overlay._built = true;
+  }
+
+  overlay.topic.textContent = state.landed || "";
+  overlay.topic.style.display = state.landed ? "" : "none";
+  overlay.phase.style.display = isResearch ? "" : "none";
+
+  overlay.stages.style.display = showStages ? "" : "none";
+  if (showStages) {
+    const hit = stageCount();
+    overlay.stages.innerHTML = "";
+    STAGES.forEach((s, i) => {
+      const li = el("li", "speech-stage " + (i < hit ? "is-hit" : "is-pending"));
+      li.appendChild(el("span", "speech-stage-label", s));
+      overlay.stages.appendChild(li);
+    });
+  }
+
+  overlay.ring.style.setProperty("--p", ringProgress());
+  overlay.digits.textContent = state.phase === "overtime" ? "+" + clock(state.overtime) : clock(state.remaining);
+  overlay.status.textContent = overlayStatus();
+  overlay.next.style.display = state.phase === "ready" ? "" : "none";
+  overlay.next.textContent = "接下来：演讲 " + duration(state.speech) + "。";
+  overlay.researchDone.style.display = isResearch ? "" : "none";
+  overlay.readyBtn.style.display = state.phase === "ready" ? "" : "none";
+  overlay.doneBtn.style.display = (state.phase === "speech" || state.phase === "overtime") ? "" : "none";
+  overlay.doneBtn.textContent = state.phase === "overtime" ? "我说完了（已超时 " + clock(state.overtime) + "）" : "我说完了";
+  overlay.reviewBtn.style.display = state.phase === "done" ? "" : "none";
+  overlay.closeBtn.textContent = state.phase === "done" ? "直接收工"
+    : (state.phase === "speech" || state.phase === "overtime") ? "放弃这轮" : "关闭";
+
+  renderCaptureUI();   // 录音胶囊跟着阶段走（只在 speech/overtime 出现）
+
+  const focusTarget = isResearch ? overlay.researchDone
+    : state.phase === "ready" ? overlay.readyBtn
+    : state.phase === "done" ? overlay.reviewBtn
+    : (state.phase === "speech" || state.phase === "overtime") ? overlay.doneBtn
+    : overlay.closeBtn;
+  if (document.activeElement !== focusTarget && overlay.contains(document.activeElement) === false) {
+    focusTarget.focus({ preventScroll: true });
+  }
+  requestWake();
+  render();
+}
+
+/* ---------------- 输出复盘（语音转写 + 口头禅分析） ---------------- */
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+let reviewEl = null, reviewOpen = false, reviewAnalyzed = false;
+let rec = null, recActive = false, recFinalText = "", recInterim = "", lastFinalAt = 0;
+const PAUSE_MIN_MS = 1500;
+
+function reviewFmtDate(iso) {
+  const d = new Date(iso);
+  return `${d.getMonth() + 1}-${String(d.getDate()).padStart(2, "0")} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+}
+
+function openReview() {
+  if (!session || reviewOpen) return;
+  reviewOpen = true;
+  reviewAnalyzed = false;
+  // ⚠️ 不要清空 recFinalText：它装着「刚才那一遍」的转写，复盘直接分析它
+
+  reviewEl = el("div", "review-overlay");
+  reviewEl.setAttribute("role", "dialog");
+  reviewEl.setAttribute("aria-modal", "true");
+  reviewEl.addEventListener("mousedown", e => { if (e.target === reviewEl) closeReview(); });
+  reviewEl.addEventListener("keydown", e => {
+    if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); closeReview(); }
+  }, true);
+
+  const panel = el("div", "review-panel");
+  panel.appendChild(el("h2", "review-title", "输出复盘"));
+  panel.appendChild(el("p", "review-topic", session.topic));
+
+  const hasText = !!recFinalText.trim();
+
+  // ① 一行状态：这一遍到底录到了什么。全文只此一句，别处不再重复说明。
+  const status = el("p", "review-status", "");
+  panel.appendChild(status);
+
+  // ② 一排工具：重新录 / 保存录音（并排，就这两个）
+  const toolRow = el("div", "review-rec-row");
+
+  const recBtn = el("button", "btn tool", "重新录一遍");
+  recBtn.type = "button";
+  recBtn.addEventListener("click", () => {
+    recFinalText = ""; recInterim = ""; lastFinalAt = 0;
+    reviewAnalyzed = false;
+    acts.style.display = "";        // 重新录之后要能再点「生成分析」
+    result.style.display = "none";
+    session.recordedAgain = true;
+    beginCapture();                 // 立刻重新取麦克风
+  });
+  toolRow.appendChild(recBtn);
+
+  // 音频留底下载（没有录音时这一格是空的，自然不占位）
+  const audioBox = el("div", "review-audio");
+  toolRow.appendChild(audioBox);
+  panel.appendChild(toolRow);
+
+  // ③ 转写正文（有内容才显示，空的时候完全不占位）
+  const textBox = el("div", "review-text");
+  textBox.setAttribute("aria-live", "polite");
+  panel.appendChild(textBox);
+
+  // ③b 修正文字：小字链接，紧挨转写，有转写时才出现
+  const pasteToggle = el("button", "review-edit-link", "手动修正文字");
+  pasteToggle.type = "button";
+  pasteToggle.addEventListener("click", () => {
+    const opening = pasteWrap.style.display === "none";
+    pasteWrap.style.display = opening ? "" : "none";
+    pasteToggle.textContent = opening ? "收起" : "手动修正文字";
+    if (opening) { pasteArea.focus(); pasteArea.setSelectionRange(pasteArea.value.length, pasteArea.value.length); }
+  });
+  panel.appendChild(pasteToggle);
+
+  const chips = el("div", "filler-chips");
+  panel.appendChild(chips);
+
+  // ④ 粘贴 / 编辑兜底：没转出文字时直接展开，有文字时收起来
+  const pasteWrap = el("div", "review-paste");
+  const pasteArea = document.createElement("textarea");
+  pasteArea.placeholder = "把刚才讲的内容粘贴或写在这里，然后点「生成分析」";
+  pasteArea.value = recFinalText;
+  pasteArea.addEventListener("input", () => {
+    recFinalText = pasteArea.value;
+    renderLive();
+  });
+  pasteWrap.appendChild(pasteArea);
+  panel.appendChild(pasteWrap);
+
+  const acts = el("div", "review-actions");
+  const analyzeBtn = el("button", "btn primary", "生成分析");
+  analyzeBtn.type = "button";
+  analyzeBtn.addEventListener("click", () => { endCapture(); analyzeNow(); });
+  acts.appendChild(analyzeBtn);
+  const skipBtn = el("button", "btn ghost", "跳过复盘，直接收工");
+  skipBtn.type = "button";
+  skipBtn.addEventListener("click", finishSession);
+  acts.appendChild(skipBtn);
+  panel.appendChild(acts);
+
+  const result = el("div");
+  result.style.display = "none";
+  panel.appendChild(result);
+
+  reviewEl.appendChild(panel);
+  ui.overlayHost.appendChild(reviewEl);
+  reviewEl._refs = { recBtn, status, textBox, chips, acts, analyzeBtn, skipBtn, pasteToggle, result, panel, audioBox, pasteArea, pasteWrap };
+
+  pasteWrap.style.display = hasText ? "none" : "";
+  pasteToggle.style.display = hasText ? "" : "none";
+  if (!hasText) pasteArea.placeholder = "把刚才讲的内容粘贴或写在这里，然后点「生成分析」";
+
+  renderAudioBox(audioBox);
+  renderLive();   // 画刚才那一遍的转写与口头禅统计
+  renderStatusLine();
+  setTimeout(() => { if (recBtn.isConnected) recBtn.focus({ preventScroll: true }); }, 60);
+
+  // 已经有转写 → 直接出分析（白姐要的就是「不用再讲一遍、直接分析」）
+  if (hasText) setTimeout(() => { if (reviewOpen && !reviewAnalyzed) analyzeNow(); }, 260);
+}
+
+/* 复盘面板唯一的那句状态说明：说清楚「录到了什么 / 没录到怎么办」 */
+function renderStatusLine() {
+  const refs = reviewEl && reviewEl._refs;
+  if (!refs || !refs.status) return;
+  const hot = captureState === "listening" || captureState === "recording";
+  const hasText = !!recFinalText.trim();
+  const words = recFinalText.replace(PAUSE_MARK_RE, "").replace(/\s/g, "").length;
+  let text;
+  if (captureState === "starting") text = "正在打开麦克风……";
+  else if (captureState === "error") text = captureNote || "麦克风没打开";
+  else if (hot) text = hasText ? "正在听你说…（已转 " + words + " 字）" : "正在听你说……";
+  else text = hasText
+    ? "已捕获刚才那一遍 · 转写 " + words + " 字" + (pendingAudio ? " · 音频已留底" : "")
+    : (pendingAudio
+        ? "这一遍没转成文字 · 录音已留底，点「保存录音」发我离线转写"
+        : "这一遍没录上 · 说一段，或直接粘贴文字");
+  refs.status.textContent = text;
+  refs.status.classList.toggle("is-live", hot);
+}
+
+let mediaRec = null, mediaChunks = [], mediaStream = null, mediaActive = false;
+let mediaPurpose = "backup";   // backup=识别同时留底音（默认） | primary=识别不可用，录音是唯一产物
+let recWatchdog = null;        // 识别假死看门狗
+let lastResultAt = 0;          // 最后一次拿到转写结果的时间戳
+let captureState = "off";      // off | starting | listening | recording | error
+let captureNote = "";          // 面向用户的状态说明
+let pendingAudio = null;       // {url,name,purpose}：复盘面板还没打开时，录音先存这
+
+// ⚠️ 线上版是被发布平台套在跨域 iframe 里打开的，而那个 iframe 上没有 allow="microphone"
+// → 浏览器一律拒绝 getUserMedia（NotAllowedError「Permission denied」，8ms 即时拒绝）。
+// 这跟用户用什么浏览器、系统有没有给麦克风权限**完全无关**（桌面 Chrome 一样失败）。
+//
+// 逃出去的四条路都实测过，只有最后一条通：
+//   ✗ window.open(location.href)           → 产物直链被静态服务器拦成「Security Restriction」页
+//   ✗ about:blank + document.write         → 同样被拦
+//   ✗ fetch 源码 → blob: URL 开新窗口       → Chromium 能用，但 **iOS Safari 不给 blob 页麦克风**（白姐实测）
+//   ✓ 托管直链（同内容上传成公网 https 直链）→ 顶层文档 + 麦克风正常
+//
+// 所以：把「专用直链」的地址写进 DIRECT_HOST_URL，嵌入页的按钮直接开它。
+// ⚠️ 每次重新上传直链后，这个常量要同步更新并重新发布壳页（否则按钮指向旧版本，虽仍可用）。
+const DIRECT_HOST_URL = "https://workbuddy-space-static.codebuddy.work/image/YBdBEMZLcJSlI1p9UnM9Qx.bin";
+const IS_FRAMED = (() => { try { return window.self !== window.top; } catch (e) { return true; } })();
+const IS_BLOB_PAGE = location.protocol === "blob:";
+
+// 兜底：万一没有专用直链，就退回 blob 方案（Chromium 可用）
+let selfHtmlCache = null;
+if (IS_FRAMED && !DIRECT_HOST_URL) {
+  fetch(location.href, { cache: "no-store" })
+    .then(r => (r.ok ? r.text() : null))
+    .then(t => { if (t && /即兴/.test(t)) selfHtmlCache = t; })
+    .catch(() => {});
+}
+
+function openStandalone() {
+  // 首选：专用直链（顶层 https 文档，麦克风正常）
+  if (DIRECT_HOST_URL) {
+    let w = null;
+    try { w = window.open(DIRECT_HOST_URL, "_blank"); } catch (e) {}
+    if (w) return true;
+    setCaptureState("error", "新窗口被浏览器拦住了。请允许本站弹窗，或直接访问专用链接：" + DIRECT_HOST_URL);
+    return false;
+  }
+  // 兜底：blob
+  if (!selfHtmlCache) {
+    setCaptureState("error", "正在准备独立窗口的页面（约 1 秒），请再点一次「在新窗口打开」。");
+    return false;
+  }
+  let url = "", w = null;
+  try {
+    url = URL.createObjectURL(new Blob([selfHtmlCache], { type: "text/html" }));
+    w = window.open(url, "_blank");
+  } catch (e) {}
+  if (!w) {
+    setCaptureState("error", "新窗口被浏览器拦住了。请允许本站弹窗，或改用电脑上的本地文件录音；这一轮也可以把文字粘贴进复盘。");
+    return false;
+  }
+  setTimeout(() => { try { URL.revokeObjectURL(url); } catch (e) {} }, 60000);
+  return true;
+}
+
+// 显式申请麦克风权限——浏览器只有拿到这个调用才会弹「允许」弹窗
+async function ensureMic() {
+  if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) throw new Error("unsupported");
+  return await navigator.mediaDevices.getUserMedia({ audio: true });
+}
+
+// App 内置浏览器（微信/飞书/钉钉/WorkBuddy 等 webview）基本都不给麦克风权限，
+// 必须把用户引导到系统浏览器，否则他只会反复点「重开」而永远失败。
+function isWebviewBrowser() {
+  const ua = navigator.userAgent || "";
+  if (/MicroMessenger|QQ\/|DingTalk|Lark|Feishu|wxwork|WorkBuddy|Alipay|Weibo|Quark|UCBrowser|baiduboxapp/i.test(ua)) return true;
+  // iOS：有 AppleWebKit 却没有 Safari，基本就是 App 内的 webview
+  if (/iPhone|iPad|iPod/.test(ua) && /AppleWebKit/.test(ua) && !/Safari/.test(ua)) return true;
+  // Android webview 的经典标记
+  if (/Android/.test(ua) && /;\s*wv\)/.test(ua)) return true;
+  return false;
+}
+function micHelpText() {
+  // 嵌入窗口是第一优先级——这条跟浏览器/系统设置都无关，说别的都是误导
+  if (IS_FRAMED) {
+    return "录音需要在独立窗口打开。现在的页面是嵌在网页里的，这种嵌入页会被浏览器一律禁掉麦克风，跟你手机的系统设置无关。"
+      + (DIRECT_HOST_URL ? "点页面顶部的「用专用链接打开」，在那里开讲就能录了。" : "点页面顶部的「在新窗口打开」。");
+  }
+  // iOS Safari 不给 blob 临时页面麦克风权限（Chromium 可以），只能换真正的直链
+  if (IS_BLOB_PAGE) {
+    return "这是临时页面，iOS Safari 不给它麦克风权限。请用发发给你的「专用链接」打开（可以加到主屏幕），或者改用电脑上的桌面快捷方式录音。";
+  }
+  if (!window.isSecureContext) return "录音必须用 https 打开（现在是 http 或本地文件），换成线上链接再试。";
+  if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+    return isWebviewBrowser()
+      ? "你现在是在 App 自带的浏览器里打开的，这类内置浏览器不放麦克风权限。点右上角「···」→ 用 Safari / Chrome 打开这个链接，再从那里开讲。"
+      : "这个浏览器不支持录音，换 Safari 或 Chrome 打开。";
+  }
+  if (isWebviewBrowser()) {
+    return "看起来你在 App 自带的浏览器里。这类内置浏览器通常不给麦克风，点右上角「···」→ 用 Safari / Chrome 打开这个链接再试。";
+  }
+  if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+    return "请到 iPhone「设置 → Safari → 麦克风」确认是「允许」，然后刷新页面、重新开讲。";
+  }
+  return "点浏览器地址栏的 🔒（或 🎤）图标 → 把「麦克风」改成允许，再点浮层上的「没录上 · 点这里重开」。";
+}
+
+// 采集状态是「录音/识别」与「界面」之间唯一的桥：浮层和复盘面板都读它
+function setCaptureState(s, note) {
+  captureState = s;
+  if (note !== undefined) captureNote = note;
+  renderCaptureUI();
+}
+
+// 渲染采集状态到两个界面（计时浮层的胶囊 + 复盘面板的状态行）
+function renderCaptureUI() {
+  const hot = captureState === "listening" || captureState === "recording";
+  if (overlay && overlay.recChip) {
+    const live = state.phase === "speech" || state.phase === "overtime";
+    overlay.recChip.style.display = live ? "" : "none";
+    overlay.recChip.textContent =
+      captureState === "listening" ? "● 正在听你说"
+      : captureState === "recording" ? "● 正在录音"
+      : captureState === "starting" ? "○ 正在打开麦克风…"
+      : captureState === "error" ? "⚠ 没录上 · 点这里重开"
+      : "○ 未录音 · 点这里开启";
+    overlay.recChip.classList.toggle("is-hot", hot);
+    if (overlay.recNote) {
+      const showNote = live && (captureState === "error" || captureState === "starting");
+      overlay.recNote.style.display = showNote ? "" : "none";
+      overlay.recNote.textContent = showNote ? (captureNote || "") : "";
+    }
+  }
+  const refs = reviewEl && reviewEl._refs;
+  if (refs) renderStatusLine();
+}
+
+// 把录音产物渲染成「保存录音」按钮（复盘面板打开前后都能用）
+function renderAudioBox(box) {
+  if (!box) return;
+  box.innerHTML = "";
+  if (!pendingAudio) return;
+  const a = el("a", "btn tool", "⬇ 保存录音");
+  a.href = pendingAudio.url;
+  a.download = pendingAudio.name;
+  a.setAttribute("aria-label", "保存这段录音");
+  box.appendChild(a);
+}
+
+// 本地录音：识别可用时留底音（原始音频永不丢），识别不可用时它就是唯一产物
+function startLocalRec(stream, purpose) {
+  try {
+    if (!window.MediaRecorder) return false;
+    mediaPurpose = purpose || "backup";
+    mediaChunks = [];
+    mediaStream = stream;
+    mediaRec = new MediaRecorder(stream);
+    mediaRec.ondataavailable = e => { if (e.data && e.data.size) mediaChunks.push(e.data); };
+    mediaRec.onstop = () => {
+      mediaActive = false;
+      if (mediaStream) { mediaStream.getTracks().forEach(t => t.stop()); mediaStream = null; }
+      if (!mediaChunks.length) return;
+      const type = mediaRec.mimeType || "audio/webm";
+      const blob = new Blob(mediaChunks, { type });
+      // 后缀跟着实际格式走：Safari 录出来是 mp4，硬写 .webm 会导致手机上打不开
+      const ext = /mp4|m4a|aac/i.test(type) ? "m4a" : /ogg/i.test(type) ? "ogg" : "webm";
+      pendingAudio = {
+        url: URL.createObjectURL(blob),
+        name: "演讲录音-" + new Date().toISOString().slice(0, 16).replace(/[:T]/g, "-") + "." + ext,
+        purpose: mediaPurpose
+      };
+      // 面板已经开着就直接画；还没开就等 openReview 时再画
+      if (reviewEl && reviewEl._refs) renderAudioBox(reviewEl._refs.audioBox);
+    };
+    mediaRec.start();
+    mediaActive = true;
+    return true;
+  } catch (e) { return false; }
+}
+function stopLocalRec() {
+  try { if (mediaRec && mediaRec.state !== "inactive") mediaRec.stop(); } catch (e) {}
+}
+
+/* 开讲即开始采集：麦克风 + 实时识别 + 并行留底音。
+   这一步必须在「开讲」时做，否则用户要在复盘里再讲一遍（讲两遍的 bug 根因）。
+   ⚠️ 并发保护用独立的 captureBusy 标志，不能用 captureState === "starting"：
+   startSpeech() 会先把状态置成 starting 再调进来，用状态当锁会把自己挡在门外。 */
+let captureBusy = false;
+async function beginCapture() {
+  if (captureBusy || recActive || mediaActive) return;
+  captureBusy = true;
+  pendingAudio = null;
+  setCaptureState("starting", "正在打开麦克风……首次会弹权限窗，请点「允许」。");
+
+  let stream = null;
+  try {
+    stream = await ensureMic();
+  } catch (e) {
+    const name = (e && e.name) || "";
+    setCaptureState("error", "没录上音。" + micHelpText());
+    captureBusy = false;
+    return;
+  }
+  // 等待授权期间这一轮可能已经结束/被放弃
+  if (state.phase !== "speech" && state.phase !== "overtime") {
+    stream.getTracks().forEach(t => t.stop());
+    captureBusy = false;
+    return;
+  }
+
+  // 录音一路并行开着：识别正常就当底音留档，识别挂了它就是唯一产物
+  const recBackup = startLocalRec(stream, "backup");
+
+  if (SR) {
+    let recBroken = false;
+    try {
+      rec = new SR();
+      rec.lang = "zh-CN";
+      rec.continuous = true;
+      rec.interimResults = true;
+      rec.onresult = e => {
+        lastResultAt = Date.now();
+        let interim = "";
+        for (let i = e.resultIndex; i < e.results.length; i++) {
+          const res = e.results[i];
+          if (res.isFinal) {
+            const now = Date.now();
+            if (lastFinalAt && now - lastFinalAt > PAUSE_MIN_MS && recFinalText.trim()) {
+              recFinalText += "（停顿 " + ((now - lastFinalAt) / 1000).toFixed(1) + " 秒）";
+            }
+            recFinalText += res[0].transcript;
+            lastFinalAt = now;
+          } else {
+            interim += res[0].transcript;
+          }
+        }
+        recInterim = interim;
+        renderLive();
+      };
+      rec.onerror = e => {
+        const err = e.error || "";
+        if (err === "no-speech" || err === "aborted") return;   // 常见抖动，onend 会自动重启
+        recBroken = true;                                        // 其余错误不再无限重启
+        recActive = false;
+        if (err === "network" || err === "service-not-allowed") {
+          recInterim = "";
+          if (mediaActive) {
+            mediaPurpose = "primary";
+            setCaptureState("recording", "实时转写连不上外网服务，已转为纯本地录音——你说的话一点没丢，说完点「我说完了」，我把录音留给你下载。");
+          } else {
+            setCaptureState("error", "转写服务连不上，也没录上音。复盘里可以粘贴文字。");
+          }
+        } else if (err === "not-allowed") {
+          setCaptureState("error", "转写服务被拒。" + micHelpText());
+        } else if (err === "audio-capture") {
+          setCaptureState("error", "没检测到麦克风设备，检查系统声音输入设置。");
+        } else {
+          setCaptureState("error", "转写出错（" + err + "）。复盘里可以粘贴文字。");
+        }
+      };
+      rec.onend = () => { if (recActive && !recBroken) { try { rec.start(); } catch (err) {} } };
+      recActive = true;
+      lastFinalAt = Date.now();
+      lastResultAt = Date.now();
+      rec.start();
+      setCaptureState(recBackup ? "listening" : "recording",
+        recBackup ? "正在听你说，原始音频同时留底。倒计时归零不会打断，说完点「我说完了」。"
+                  : "正在录音。说完点「我说完了」。");
+
+      // 看门狗：识别可能既不报错也不吐字（外网服务被墙时的典型表现）。
+      // 12 秒一个字都没出来，就判定它废了，直接转纯录音，别让用户对着死掉的识别器白讲。
+      clearInterval(recWatchdog);
+      recWatchdog = setInterval(() => {
+        if (!recActive || recBroken) { clearInterval(recWatchdog); recWatchdog = null; return; }
+        if (Date.now() - lastResultAt < 12000) return;
+        clearInterval(recWatchdog);
+        recWatchdog = null;
+        recBroken = true;
+        recActive = false;
+        try { rec.stop(); } catch (e) {}
+        if (mediaActive) {
+          mediaPurpose = "primary";
+          setCaptureState("recording", "实时转写 12 秒没吐出一个字，基本确定连不上外网服务——已切成纯本地录音，你说的话一点没丢。说完点「我说完了」，我把录音留给你下载。");
+        }
+      }, 2000);
+      captureBusy = false;
+      return;
+    } catch (e) { recActive = false; /* 走本地录音兜底 */ }
+  }
+
+  // 不支持实时识别：录音就是唯一产物
+  if (mediaActive) {
+    mediaPurpose = "primary";
+    setCaptureState("recording", "当前浏览器不支持实时转写，正在录音。说完点「我说完了」，录音会留给你下载。");
+  } else {
+    stream.getTracks().forEach(t => t.stop());
+    setCaptureState("error", "录音启动失败——复盘里可以粘贴文字。");
+  }
+  captureBusy = false;
+}
+
+// 说完即停止采集（复盘直接分析这一段，不再要求重讲）
+function endCapture() {
+  clearInterval(recWatchdog); recWatchdog = null;
+  recActive = false;
+  captureBusy = false;
+  recInterim = "";              // 未定稿的中间结果丢掉，只留 recFinalText
+  try { if (rec) rec.stop(); } catch (e) {}
+  stopLocalRec();
+  captureState = "off";
+  renderCaptureUI();
+}
+
+// 浮层上的「录音」胶囊：自动开启失败时手动重开
+function toggleCapture() {
+  if (captureState === "listening" || captureState === "recording") {
+    endCapture();
+    captureNote = "已停止录音。说完点「我说完了」。";
+    renderCaptureUI();
+  } else if (IS_FRAMED) {
+    openStandalone();   // 嵌入页重试多少次都会被拒，直接带她去独立窗口
+  } else {
+    beginCapture();
+  }
+}
+
+
+function renderLive() {
+  // 开讲阶段复盘面板还没开，这时只更新浮层，别炸
+  const refs = reviewEl && reviewEl._refs;
+  if (!refs) { renderCaptureUI(); return; }
+  const { textBox, chips } = refs;
+  const full = recFinalText + recInterim;
+  const hasContent = !!full.trim();
+
+  textBox.innerHTML = "";
+  if (recFinalText) textBox.appendChild(el("span", null, recFinalText));
+  if (recInterim) textBox.appendChild(el("span", "interim", recInterim));
+  textBox.style.display = hasContent ? "" : "none";   // 空的时候完全不占位
+
+  chips.innerHTML = "";
+  chips.style.display = hasContent ? "" : "none";
+  if (hasContent) {
+    const stats = analyzeSpeech(full, { light: true });
+    const mkChip = (label, n, hot) => {
+      chips.appendChild(el("span", "filler-chip" + (hot ? " hot" : ""), label + " ×" + n));
+    };
+    const entries = Object.entries(stats.counts).sort((a, b) => b[1] - a[1]);
+    if (!entries.length && !stats.pauses) chips.appendChild(el("span", "filler-chip", "目前很干净 ✓"));
+    else {
+      entries.forEach(([w, n]) => mkChip(w, n, n >= 3));
+      if (stats.pauses) mkChip("停顿", stats.pauses, stats.pauses >= 4);
+    }
+    // 「说了多少字」由上面那句状态说明负责，这里只放口头禅和停顿，别重复
+    textBox.scrollTop = textBox.scrollHeight;
+
+    // 有转写了就把粘贴区收起来（用户正在打字就别收，否则输入框会凭空消失）
+    if (refs.pasteWrap && !(refs.pasteArea && refs.pasteArea.value.trim())) {
+      refs.pasteWrap.style.display = "none";
+      refs.pasteToggle.style.display = "";
+      refs.pasteToggle.textContent = "手动修正文字";
+    }
+  }
+  renderStatusLine();
+}
+
+function analyzeNow() {
+  const { result, acts, status } = reviewEl._refs;
+  const full = recFinalText.trim();
+  if (!full) {
+    status.textContent = "还没有内容 · 说一段或粘贴文字再分析";
+    return;
+  }
+  const stats = analyzeSpeech(full);
+  const spoken = Math.max(session.spokenSec || 0, 0);
+  const planned = session.speechPlannedSec || 0;
+  const sc = scoreSpeech(stats, spoken, {
+    punctual: session.punctual,
+    overtimeSec: session.overtimeSec || 0,
+    plannedSec: planned
+  });
+  const advice = buildAdvice(stats, spoken, planned || session.plannedSec);
+  // 准时/超时也是打分项：超时给硬提醒，准时贴身完成给正反馈
+  if (session.punctual === false) {
+    advice.unshift(`超时 ${duration(session.overtimeSec || 0)}才收尾。在标准时间内说完是硬指标——下次提纲最后一条直接写结论，时间一到就落这句。`);
+  } else if (session.punctual === true && session.speechPlannedSec && spoken >= session.speechPlannedSec * 0.85) {
+    advice.unshift(`在 ${duration(session.speechPlannedSec)}内完整收尾，时间控制很好，保持这个节奏。`);
+  }
+
+  session.text = full;
+  session.analysis = {
+    cleaned: stats.cleaned, counts: stats.counts, fillerTotal: stats.fillerTotal,
+    pauses: stats.pauses, words: stats.words, rawWords: stats.rawWords,
+    per100: +sc.per100.toFixed(1), wpm: sc.wpm || 0,
+    parts: sc.parts || [],
+    restructured: stats.restructured,
+    structure: stats.structure,
+    repeatItems: (stats.repeats && stats.repeats.items) || [],
+    repeatPhrases: (stats.repeats && stats.repeats.phrases) || [],
+    repeatRemoved: (stats.repeats && stats.repeats.removed) || 0
+  };
+  session.score = sc.score;
+
+  acts.style.display = "none";
+  result.style.display = "";
+  result.innerHTML = "";
+
+  const badge = el("div", "score-badge");
+  const num = el("div", "score-num", sc.score + "/10");
+  badge.appendChild(num);
+  const timeTag = session.punctual === true ? " · 准时说完 ✓"
+    : session.punctual === false ? " · 超时 " + duration(session.overtimeSec || 0) + "说完" : "";
+  badge.appendChild(el("div", "score-caption",
+    `综合评分 · 说了约 ${Math.round(spoken)} 秒 · ${stats.rawWords} 字`
+    + (sc.wpm ? ` · ${sc.wpm} 字/分钟` : "") + timeTag));
+  result.appendChild(badge);
+
+  const mkSection = (title) => {
+    const sec = el("div", "result-section");
+    sec.appendChild(el("p", "result-heading", title));
+    result.appendChild(sec);
+    return sec;
+  };
+
+  const diag = buildDiagnosis(
+    stats, spoken, planned,
+    { punctual: session.punctual, overtimeSec: session.overtimeSec || 0, plannedSec: planned },
+    stats.structure
+  );
+  const st = stats.structure;
+  session.diagnosis = diag;
+
+  /* ===== 诊断结论：主题 / 优点 / 缺点 / 口头禅 / 综合评分 ===== */
+  const dxSec = mkSection("诊断结论");
+  const dx = el("div", "dx");
+  dxSec.appendChild(dx);
+
+  const mkBlock = (cls, icon, label) => {
+    const b = el("div", "dx-block");
+    const h = el("p", "dx-title " + cls);
+    h.appendChild(el("i", null, icon));
+    h.appendChild(el("span", null, label));
+    b.appendChild(h);
+    dx.appendChild(b);
+    return b;
+  };
+
+  // ① 主题
+  const bTopic = mkBlock("t-topic", "◎", "主题");
+  if (diag.keywords.length) {
+    const kw = el("div", "dx-kw");
+    diag.keywords.forEach(k => kw.appendChild(el("span", "kw", k.n > 2 ? k.text + " ×" + k.n : k.text)));
+    bTopic.appendChild(kw);
+    bTopic.appendChild(el("p", "dx-note", "工具不认语义，这是按出现频次算的核心词，不是概括。"));
+  } else {
+    // 内容不长、词频都是 1 次时，取不出「反复出现的核心词」——直接把她开场那句摆出来，别空着
+    const head = (stats.cleaned || "").split(/[。！？!?]/)[0].trim().slice(0, 22);
+    if (head) {
+      const kw = el("div", "dx-kw");
+      kw.appendChild(el("span", "kw", head + (head.length >= 22 ? "…" : "")));
+      bTopic.appendChild(kw);
+      bTopic.appendChild(el("p", "dx-note", "内容偏短，取不出反复出现的核心词——上面是你开场那句，不是概括。"));
+    } else {
+      bTopic.appendChild(el("p", "dx-note", "内容太短，看不出主题。"));
+    }
+  }
+
+  // ② 优点
+  const bPro = mkBlock("t-pro", "✓", "优点");
+  if (diag.pros.length) {
+    const ul = el("ul", "dx-list pro");
+    diag.pros.forEach(p => {
+      const li = document.createElement("li");
+      li.appendChild(el("b", null, p.t + "："));
+      li.appendChild(document.createTextNode(p.e));
+      ul.appendChild(li);
+    });
+    bPro.appendChild(ul);
+  } else {
+    bPro.appendChild(el("p", "dx-note", "这一轮没找到明显亮点。"));
+  }
+
+  // ③ 缺点
+  const bCon = mkBlock("t-con", "!", "缺点");
+  if (diag.cons.length) {
+    const ul = el("ul", "dx-list con");
+    diag.cons.forEach(p => {
+      const li = document.createElement("li");
+      li.appendChild(el("b", null, p.t + "："));
+      li.appendChild(document.createTextNode(p.e));
+      ul.appendChild(li);
+    });
+    bCon.appendChild(ul);
+  } else {
+    bCon.appendChild(el("p", "dx-note", "没有明显硬伤。"));
+  }
+
+  // ④ 口头禅
+  const bFl = mkBlock("t-fl", "·", "口头禅");
+  bFl.appendChild(el("p", "result-note",
+    "共 " + stats.fillerTotal + " 处 · " + diag.per100.toFixed(1) + " 处/百字"
+    + " · 长停顿 " + stats.pauses + " 次"
+    + (repItems0().length ? " · 整段重复 " + repItems0().length + " 处" : "")));
+  if (Object.keys(stats.counts).length) {
+    const ft = el("table", "freq-table");
+    Object.entries(stats.counts).sort((a, b) => b[1] - a[1]).forEach(([w, n]) => {
+      const tr = document.createElement("tr");
+      const td1 = document.createElement("td"); td1.textContent = "「" + w + "」";
+      const td2 = document.createElement("td"); td2.textContent = n + " 次";
+      tr.appendChild(td1); tr.appendChild(td2); ft.appendChild(tr);
+    });
+    bFl.appendChild(ft);
+  } else {
+    bFl.appendChild(el("p", "dx-note", "一个「嗯啊呢」都没有，这块很干净。"));
+  }
+  function repItems0() { return (stats.repeats && stats.repeats.items) || []; }
+
+  // ⑤ 综合评分
+  const bScore = mkBlock("t-score", "★", "综合评分 · " + sc.score + "/10");
+  if (sc.parts && sc.parts.length) {
+    const pt = el("table", "freq-table parts-table");
+    sc.parts.forEach(p => {
+      const tr = document.createElement("tr");
+      const td0 = document.createElement("td"); td0.textContent = p.label;
+      const td1 = document.createElement("td"); td1.textContent = p.detail;
+      const td2 = document.createElement("td");
+      td2.textContent = (p.pt >= 0 ? "+" : "") + p.pt + " / " + p.max;
+      td2.className = p.pt < 0 ? "pt-neg" : p.pt >= p.max ? "pt-full" : "pt-part";
+      tr.appendChild(td0); tr.appendChild(td1); tr.appendChild(td2);
+      pt.appendChild(tr);
+    });
+    bScore.appendChild(pt);
+  } else {
+    bScore.appendChild(el("p", "dx-note", "内容太短，不构成一次完整输出。"));
+  }
+
+  /* ===== 结构骨架：这一轮重排做了什么 ===== */
+  if (stats.restructured) {
+    const skelSec = mkSection("结构骨架 · 断句、分段、分点都用你录音里的真实停顿");
+    const skel = el("div", "skel");
+    const mkItem = (txt, ok) => skel.appendChild(el("span", "skel-item" + (ok === true ? " ok" : ok === false ? " no" : ""), txt));
+    mkItem(st.paragraphs + " 段");
+    mkItem("开场钩子 " + (st.hasHook ? "有" : "没有"), st.hasHook);
+    mkItem("收尾落点 " + (st.hasClosing ? "有" : "偏弱"), st.hasClosing);
+    mkItem(st.points.length >= 2 ? "分点 " + st.points.length + " 个" : "没有分点", st.points.length >= 2);
+    mkItem("具体例子 " + (st.hasExample ? "有" : "没有"), st.hasExample);
+    skelSec.appendChild(skel);
+  }
+
+  /* ===== 重构稿（结构重排版） ===== */
+  if (stats.restructured) {
+    const rsSec = mkSection("重构稿 · 按你的思路重排结构：断句、分段、分点");
+    rsSec.appendChild(el("p", "result-note", "用词一个字没改，只动了断句、段落和标点。换词和提炼金句需要我出报告时做。"));
+    rsSec.appendChild(el("p", "result-cleaned", stats.restructured));
+  }
+
+  /* ===== 原稿（只删口头禅和重复） ===== */
+  if (stats.cleaned) {
+    const cleanedSec = mkSection("原稿 · 只删口头禅和重复句，其余原样");
+    cleanedSec.appendChild(el("p", "result-cleaned", stats.cleaned));
+  }
+
+  // 重复：白姐特别在意的「习惯性重复前一句话」，和口头禅分开统计
+  const rep = stats.repeats || { items: [], phrases: [], removed: 0 };
+  const repItems = rep.items || [];
+  const repSec = mkSection("重复 · 独立于口头禅的另一类问题");
+  if (repItems.length) {
+    repSec.appendChild(el("p", "result-note", "你把同一段话说了两遍以上（洗稿里已只保留第一次）"));
+    const rt = el("table", "freq-table");
+    repItems.forEach(r => {
+      const tr = document.createElement("tr");
+      const td1 = document.createElement("td");
+      td1.textContent = "「" + r.text.slice(0, 22) + (r.text.length > 22 ? "…" : "") + "」";
+      const td2 = document.createElement("td");
+      td2.textContent = "说了 " + r.n + " 遍";
+      tr.appendChild(td1); tr.appendChild(td2); rt.appendChild(tr);
+    });
+    repSec.appendChild(rt);
+  }
+  if (rep.phrases && rep.phrases.length) {
+    repSec.appendChild(el("p", "result-note", "同一个说法反复用（4 次以上，换个词会更有推进感）"));
+    const pt2 = el("table", "freq-table");
+    rep.phrases.forEach(p => {
+      const tr = document.createElement("tr");
+      const td1 = document.createElement("td"), td2 = document.createElement("td");
+      td1.textContent = "「" + p.text + "」";
+      td2.textContent = p.n + " 次";
+      tr.appendChild(td1); tr.appendChild(td2); pt2.appendChild(tr);
+    });
+    repSec.appendChild(pt2);
+  }
+  if (!repItems.length && !(rep.phrases || []).length) {
+    repSec.appendChild(el("p", "result-note", "没有重复说同一段话，也没有高频复用的短语，这块很干净。"));
+  }
+
+  const advSec = mkSection("建议");
+  const ul = el("ul", "advice-list");
+  advice.forEach(t => ul.appendChild(el("li", null, t)));
+  advSec.appendChild(ul);
+
+  const saveActs = el("div", "review-actions");
+  const saveBtn = el("button", "btn primary", "存入历史");
+  saveBtn.type = "button";
+  saveBtn.addEventListener("click", finishSession);
+  saveActs.appendChild(saveBtn);
+  result.appendChild(saveActs);
+  reviewAnalyzed = true;
+  result.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function closeReview() {
+  // 关闭复盘回到上一屏（时间到那一步），不丢本轮记录
+  if (!reviewOpen) return;
+  endCapture();
+  if (reviewEl) { reviewEl.remove(); reviewEl = null; }
+  reviewOpen = false;
+}
+
+function stopReview() { closeReview(); }
+
+/* ---------------- 练习历史面板 ---------------- */
+let historyEl = null;
+function openHistory() {
+  if (historyEl) return;
+  historyEl = el("div", "settings-overlay");
+  historyEl.setAttribute("role", "dialog");
+  historyEl.setAttribute("aria-modal", "true");
+  historyEl.addEventListener("mousedown", e => { if (e.target === historyEl) closeHistory(); });
+  historyEl.addEventListener("keydown", e => {
+    if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); closeHistory(); }
+  }, true);
+
+  const panel = el("div", "settings-panel history-panel");
+  panel.setAttribute("role", "dialog");
+  panel.setAttribute("aria-label", "练习历史");
+
+  const head = el("header", "settings-panel-head");
+  const titleRow = el("div", "panel-title-row");
+  const backBtn = el("button", "panel-back", "←");
+  backBtn.type = "button";
+  backBtn.setAttribute("aria-label", "返回上一屏");
+  backBtn.addEventListener("click", closeHistory);
+  titleRow.appendChild(backBtn);
+  const title = el("h2", "settings-panel-title", "练习历史");
+  title.style.marginBottom = "0";
+  titleRow.appendChild(title);
+  titleRow.appendChild(el("span", "panel-head-spacer"));
+  const clearBtn = el("button", "btn danger-ghost", "清空全部");
+  clearBtn.type = "button";
+  clearBtn.style.padding = ".45rem .8rem";
+  clearBtn.addEventListener("click", () => {
+    if (clearBtn.dataset.confirm !== "1") {
+      clearBtn.dataset.confirm = "1";
+      clearBtn.textContent = "再点一次确认";
+      setTimeout(() => { clearBtn.dataset.confirm = ""; clearBtn.textContent = "清空全部"; }, 2500);
+      return;
+    }
+    clearAllHistory();
+    renderHistoryList();
+  });
+  titleRow.appendChild(clearBtn);
+  head.appendChild(titleRow);
+  panel.appendChild(head);
+  panel.appendChild(el("p", "settings-panel-blurb",
+    "完整走完一轮（抽题 + 计时结束）才会记进来。记录先存在这台设备上，点「同步」才会和其他设备合并。"));
+
+  /* —— 跨设备同步区 ——
+     顺序固定为：云账号 → 同步码 → 说明 → 动作按钮。
+     两个输入框必须挨着（白姐在手机上要来回滑，分开填很容易漏填一个）。 */
+  const syncBox = el("div", "sync-box");
+
+  // 云账号（JSONBin Master Key）：每台设备填一次
+  const keyRow = el("div", "sync-row sync-code-row");
+  keyRow.appendChild(el("span", "sync-label", "云账号"));
+  const keyInput = document.createElement("input");
+  keyInput.type = "password";
+  keyInput.className = "sync-code-input";
+  keyInput.placeholder = "JSONBin 的 Master Key（只存本机）";
+  keyInput.value = loadMasterKey();
+  keyRow.appendChild(keyInput);
+  const keySave = el("button", "btn ghost", "保存");
+  keySave.type = "button";
+  keySave.style.padding = ".35rem .7rem";
+  keySave.addEventListener("click", () => {
+    const v = keyInput.value.trim();
+    setMasterKey(v);
+    setSyncStatus(v ? "云账号已保存到本机。点「同步到其他设备」试试。" : "云账号已清除，自动同步关闭（导出/导入仍然可用）。");
+    renderSyncReady();
+  });
+  keyRow.appendChild(keySave);
+  syncBox.appendChild(keyRow);
+
+  // 云账号说明（紧跟在输入框下面，手机上不用来回找）
+  const keyHelp = el("p", "sync-hint");
+  keyHelp.innerHTML = "自动同步需要一个免费的云账号（一次配置，各设备各填一次）："
+    + "① 打开 <a href=\"https://jsonbin.io\" target=\"_blank\" rel=\"noopener\" style=\"color:#79b8ff\">jsonbin.io</a> 用邮箱注册/登录 → "
+    + "② 左侧 <b>API KEYS</b> → 复制 <b>Master Key</b> → ③ 粘到上面那个框、点保存。";
+  syncBox.appendChild(keyHelp);
+
+  // 同步码：紧挨着云账号，两个输入框连在一起填
+  const codeRow = el("div", "sync-row sync-code-row");
+  codeRow.appendChild(el("span", "sync-label", "同步码"));
+  const codeInput = document.createElement("input");
+  codeInput.type = "text";
+  codeInput.className = "sync-code-input";
+  codeInput.placeholder = "第一次同步会自动生成";
+  codeInput.value = loadSyncCode();
+  codeRow.appendChild(codeInput);
+  const codeSave = el("button", "btn ghost", "保存");
+  codeSave.type = "button";
+  codeSave.style.padding = ".35rem .7rem";
+  codeSave.addEventListener("click", () => {
+    const v = codeInput.value.trim();
+    setSyncCode(v);
+    setSyncStatus(v
+      ? "同步码已保存。把你的其他设备填上同一个码（云账号也要填同一个），点「同步」就能合并到一起。"
+      : "同步码已清除。下次点「同步」会重新生成一个新码（各设备要重新填）。");
+  });
+  codeRow.appendChild(codeSave);
+  syncBox.appendChild(codeRow);
+  syncBox.appendChild(el("p", "sync-hint",
+    "同步码是这份记录的钥匙：同一个码的设备会合并到一起；朋友在自己设备上首次同步会生成新码，记录进不到你这里。码和云账号都别外发。不配置也能用——「导出备份 / 导入合并」永远可用。"));
+
+  // 动作按钮：两个输入框都填完之后才出现
+  const syncTop = el("div", "sync-row");
+  const syncBtn = el("button", "btn primary", "同步到其他设备");
+  syncBtn.type = "button";
+  syncBtn.style.padding = ".5rem .95rem";
+  syncBtn.addEventListener("click", syncNow);
+  syncTop.appendChild(syncBtn);
+
+  const ioRow = el("div", "sync-row");
+  const exportBtn = el("button", "btn ghost", "导出备份");
+  exportBtn.type = "button";
+  exportBtn.style.padding = ".45rem .8rem";
+  exportBtn.addEventListener("click", exportHistory);
+  ioRow.appendChild(exportBtn);
+
+  const importLabel = el("label", "btn ghost", "导入合并");
+  importLabel.style.cssText += ";padding:.45rem .8rem;cursor:pointer";
+  const importInput = document.createElement("input");
+  importInput.type = "file";
+  importInput.accept = ".json,application/json";
+  importInput.style.display = "none";
+  importInput.addEventListener("change", () => {
+    importHistoryFile(importInput.files && importInput.files[0]);
+    importInput.value = "";
+  });
+  importLabel.appendChild(importInput);
+  ioRow.appendChild(importLabel);
+  syncTop.appendChild(ioRow);
+  syncBox.appendChild(syncTop);
+
+  const syncStatus = el("p", "sync-status", "");
+  syncBox.appendChild(syncStatus);
+  panel.appendChild(syncBox);
+
+  const list = el("ul", "history-list");
+  panel.appendChild(list);
+
+  const done = el("button", "btn primary settings-done", "完成");
+  done.type = "button";
+  done.addEventListener("click", closeHistory);
+  panel.appendChild(done);
+
+  historyEl.appendChild(panel);
+  ui.overlayHost.appendChild(historyEl);
+  historyEl._list = list;
+  historyEl._syncStatus = syncStatus;
+  historyEl._codeInput = codeInput;
+  historyEl._keyInput = keyInput;
+  historyEl._syncBtn = syncBtn;
+  renderHistoryList();
+  renderSyncReady();
+  setTimeout(() => done.focus(), 60);
+}
+
+function setSyncStatus(text) {
+  if (historyEl && historyEl._syncStatus) historyEl._syncStatus.textContent = text || "";
+}
+// 没配云账号时把同步按钮标灰并要求先填 Key
+function renderSyncReady() {
+  if (!historyEl || !historyEl._syncBtn) return;
+  const ready = !!loadMasterKey();
+  historyEl._syncBtn.disabled = !ready;
+  historyEl._syncBtn.textContent = ready ? "同步到其他设备" : "先填云账号才能同步";
+  historyEl._syncBtn.style.opacity = ready ? "" : ".55";
+  historyEl._syncBtn.style.cursor = ready ? "" : "not-allowed";
+}
+function renderHistoryList() {
+  const list = historyEl._list;
+  const data = loadHistory();
+  list.innerHTML = "";
+  if (!data.length) {
+    list.appendChild(el("div", "history-empty", "还没有记录——抽一题，把计时走完，这里就会有第一条。"));
+    return;
+  }
+  data.forEach(entry => {
+    const li = el("li", "history-item");
+    const head = el("div", "history-item-head");
+    head.appendChild(el("span", "history-date", reviewFmtDate(entry.date)));
+    head.appendChild(el("span", "history-topic", entry.topic));
+    li.appendChild(head);
+    const fillerN = entry.analysis ? entry.analysis.fillerTotal : 0;
+    const meta = el("div", "history-meta");
+    meta.innerHTML = ""
+      + escapeHtml(entry.categoryLabel) + " · " + escapeHtml(entry.modeLabel)
+      + " · 讲了约 " + Math.round(entry.spokenSec || 0) + " 秒"
+      + (entry.punctual === true ? ' · <span class="history-score">准时 ✓</span>'
+        : entry.punctual === false ? " · 超时 " + Math.round(entry.overtimeSec || 0) + " 秒" : "")
+      + (entry.score ? ' · <span class="history-score">' + entry.score + "/10</span>" : "")
+      + (entry.analysis ? " · 口头禅 " + fillerN + " 次" : " · 未复盘");
+    li.appendChild(meta);
+
+    const detail = el("div", "history-detail");
+    if (entry.text) {
+      detail.appendChild(el("h4", null, "原稿"));
+      detail.appendChild(el("p", null, entry.text));
+      // 洗稿文本不进云端（省额度），从别的设备合并来的记录要就地重算
+      const cleaned = (entry.analysis && entry.analysis.cleaned) || analyzeSpeech(entry.text).cleaned;
+      if (cleaned) {
+        detail.appendChild(el("h4", null, "洗稿后"));
+        detail.appendChild(el("p", "cleaned", cleaned));
+      }
+      if (entry.analysis && Object.keys(entry.analysis.counts || {}).length) {
+        detail.appendChild(el("h4", null, "口头禅频次"));
+        const p = el("p", null, Object.entries(entry.analysis.counts)
+          .sort((a, b) => b[1] - a[1]).map(([w, n]) => `「${w}」×${n}`).join("　")
+          + (entry.analysis.pauses ? `　（停顿）×${entry.analysis.pauses}` : ""));
+        detail.appendChild(p);
+      }
+    }
+    const actions = el("div", "history-item-actions");
+    if (entry.text) {
+      const expand = el("button", "history-expand", "展开详情");
+      expand.type = "button";
+      expand.addEventListener("click", () => li.classList.toggle("is-open"));
+      actions.appendChild(expand);
+    }
+    const del = el("button", "history-del", "删除");
+    del.type = "button";
+    del.addEventListener("click", () => { deleteHistoryEntry(entry.id); renderHistoryList(); });
+    actions.appendChild(del);
+    li.appendChild(actions);
+    li.appendChild(detail);
+    list.appendChild(li);
+  });
+}
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+function closeHistory() {
+  if (!historyEl) return;
+  historyEl.remove();
+  historyEl = null;
+}
+
+/* ---------------- 设置面板 ---------------- */
+function toggleSettings() { state.settingsOpen ? closeSettings(true) : openSettings(); }
+function openSettings() {
+  if (locked()) return;
+  state.settingsOpen = true;
+  ui.settings.classList.add("is-open");
+  ui.sTrigger.setAttribute("aria-expanded", "true");
+  buildSettingsPanel();
+}
+function closeSettings(refocus) {
+  state.settingsOpen = false;
+  ui.settings.classList.remove("is-open");
+  ui.sTrigger.setAttribute("aria-expanded", "false");
+  if (settingsPanel) { settingsPanel.remove(); settingsPanel = null; }
+  if (refocus) ui.sTrigger.focus();
+}
+
+function durationField(label, minutes, min, max, hint, onChange) {
+  const wrap = el("div", "duration-field");
+  const head = el("div", "duration-head");
+  const lab = el("label", "duration-label", label);
+  const val = el("span", "duration-value");
+  val.setAttribute("aria-live", "polite");
+  head.appendChild(lab); head.appendChild(val);
+  const input = document.createElement("input");
+  input.className = "duration-slider";
+  input.type = "range";
+  input.min = min; input.max = max; input.step = 1;
+  input.value = minutes;
+  input.setAttribute("aria-label", label);
+  const ends = el("div", "duration-ends");
+  ends.setAttribute("aria-hidden", "true");
+  ends.appendChild(el("span", null, min + " 分钟"));
+  ends.appendChild(el("span", null, max + " 分钟"));
+  wrap.appendChild(head); wrap.appendChild(input); wrap.appendChild(ends);
+  const hintEl = hint ? el("p", "duration-hint", hint) : null;
+  if (hintEl) wrap.appendChild(hintEl);
+
+  const sync = m => {
+    val.textContent = duration(m * 60);
+    input.setAttribute("aria-valuetext", duration(m * 60));
+  };
+  sync(minutes);
+  input.addEventListener("input", () => {
+    const m = Number(input.value);
+    sync(m);
+    onChange(m * 60);
+  });
+  return wrap;
+}
+
+function buildSettingsPanel() {
+  const ov = el("div", "settings-overlay");
+  ov.setAttribute("role", "presentation");
+  ov.addEventListener("mousedown", e => { if (e.target === e.currentTarget) closeSettings(true); });
+  const panel = el("div", "settings-panel");
+  panel.setAttribute("role", "dialog");
+  panel.setAttribute("aria-modal", "true");
+  panel.setAttribute("aria-label", "设置");
+
+  const head = el("header", "settings-panel-head");
+  const titleRow = el("div", "panel-title-row");
+  const backBtn = el("button", "panel-back", "←");
+  backBtn.type = "button";
+  backBtn.setAttribute("aria-label", "返回上一屏");
+  backBtn.addEventListener("click", () => closeSettings(true));
+  titleRow.appendChild(backBtn);
+  titleRow.appendChild(el("h2", "settings-panel-title", "设置"));
+  head.appendChild(titleRow);
+  head.appendChild(el("p", "settings-panel-blurb", "计时时长以整分钟为单位。演讲时长两种模式分开记，互不影响。"));
+  panel.appendChild(head);
+
+  panel.appendChild(durationField(
+    state.mode === "deep-research" ? "演讲 · 深度研究" : "演讲 · 即兴开讲",
+    Math.round(state.speech / 60), 1, 10,
+    state.mode === "deep-research" ? "研究结束后输出的时长，默认 3 分钟" : "抽到题就开口，默认 1 分钟",
+    v => {
+      const key = state.mode === "deep-research" ? "speechDeep" : "speechCuff";
+      const sec = normalize(key, v);
+      if (state.mode === "deep-research") state.speechDeep = sec; else state.speechCuff = sec;
+      saveNum(key, sec);
+      state.speech = sec;
+      if (state.phase === "idle" || state.phase === "ready") { state.remaining = state.speech; renderOverlay(); }
+      render();
+    }));
+
+  panel.appendChild(durationField("研究", Math.round(state.research / 60), 1, 60, "仅深度研究模式", v => {
+    state.research = normalize("research", v);
+    saveNum("research", state.research);
+    render();
+  }));
+
+  const muteRow = el("div", "settings-mute");
+  const cb = document.createElement("input");
+  cb.type = "checkbox";
+  cb.id = "mute-checkbox";
+  cb.checked = state.muted;
+  cb.addEventListener("change", () => {
+    state.muted = cb.checked;
+    muted = cb.checked;
+    saveBool("muted", cb.checked);
+    if (!cb.checked) primeAudio();
+  });
+  const cbLabel = el("label", null, "关闭音效");
+  cbLabel.setAttribute("for", "mute-checkbox");
+  muteRow.appendChild(cb); muteRow.appendChild(cbLabel);
+  panel.appendChild(muteRow);
+
+  panel.appendChild(el("p", "settings-note", "设置会自动保存，下次打开还在。"));
+
+  const done = el("button", "btn primary settings-done", "完成");
+  done.type = "button";
+  done.addEventListener("click", () => closeSettings(true));
+  panel.appendChild(done);
+
+  ov.appendChild(panel);
+  ui.overlayHost.appendChild(ov);
+  settingsPanel = ov;
+  setTimeout(() => { const f = panel.querySelector("input, button"); if (f) f.focus(); }, 0);
+
+  ov.addEventListener("keydown", e => {
+    if (e.key === "Escape") { e.preventDefault(); closeSettings(true); return; }
+    if (e.key !== "Tab") return;
+    const SEL = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    const items = Array.from(panel.querySelectorAll(SEL)).filter(n => !n.hasAttribute("disabled") && n.tabIndex !== -1);
+    if (!items.length) return;
+    const first = items[0], last = items[items.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+}
+
+/* ---------------- 全局键盘 ---------------- */
+document.addEventListener("keydown", e => {
+  if (reviewOpen || historyEl) return;   // 复盘/历史面板自己处理 Esc
+  if (running()) {
+    if (e.key === "Escape") { e.preventDefault(); closeTimer(); }
+    return;
+  }
+  if (state.settingsOpen || state.menuOpen) return;
+  const tag = (document.activeElement && document.activeElement.tagName) || "";
+  if (tag === "INPUT" || tag === "SELECT" || tag === "TEXTAREA") return;
+  if (e.key === " " || e.key === "Enter") {
+    if (document.activeElement && document.activeElement.tagName === "BUTTON") return;
+    e.preventDefault();
+    doSpin();
+  }
+});
+
+/* ---------------- 启动 ---------------- */
+render();
+
+/* ---------------- 息屏保护：计时期间尽量不让屏幕熄灭 ---------------- */
+let wakeLock = null;
+async function requestWake() {
+  try {
+    if (!("wakeLock" in navigator)) return;
+    if (!wakeLock) wakeLock = await navigator.wakeLock.request("screen");
+  } catch (e) { /* 浏览器不支持或用户拒绝，忽略 */ }
+}
+function releaseWake() {
+  try { if (wakeLock) { wakeLock.release(); wakeLock = null; } } catch (e) {}
+}
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible" && running()) requestWake();
+});
+
+/* ---------------- 离线缓存（sw.js 存在时才生效，缺失不影响使用） ---------------- */
+if ("serviceWorker" in navigator && location.protocol !== "file:") {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  });
+}
+
+/* ---------------- 运行时注入 manifest（无需外部文件也能安装到桌面） ---------------- */
+(function injectManifest() {
+  try {
+    const ICON_192 = "https://workbuddy-space-static.codebuddy.work/image/IiyC0DPh7Xv3w0aMYbPF4V.png";
+    const ICON_512 = "https://workbuddy-space-static.codebuddy.work/image/LCliAm9XviUVMULcLZAE2o.png";
+    const here = location.href.split("#")[0];
+    const scope = here.slice(0, here.lastIndexOf("/") + 1);
+    const m = {
+      id: "unprompted-cn",
+      name: "Unprompted · 即兴演讲练习",
+      short_name: "即兴",
+      description: "抽一个有分量的题目，然后开口讲 —— 即兴开讲或深度研究，练的就是临场思考。",
+      lang: "zh-CN",
+      dir: "ltr",
+      start_url: here,
+      scope: scope,
+      display: "standalone",
+      orientation: "any",
+      background_color: "#121816",
+      theme_color: "#121816",
+      icons: [
+        { src: ICON_192, sizes: "192x192", type: "image/png", purpose: "any" },
+        { src: ICON_512, sizes: "512x512", type: "image/png", purpose: "any" },
+        { src: ICON_512, sizes: "512x512", type: "image/png", purpose: "maskable" }
+      ]
+    };
+    const link = document.createElement("link");
+    link.rel = "manifest";
+    link.href = URL.createObjectURL(new Blob([JSON.stringify(m)], { type: "application/manifest+json" }));
+    document.head.appendChild(link);
+  } catch (e) {}
+})();
+
+/* ---------------- 嵌入窗口逃生提示 ----------------
+   线上版被发布平台套在 iframe 里，iframe 上没有 allow="microphone"，
+   所以嵌入页**永远**拿不到麦克风（任何浏览器、任何系统设置都一样）。
+   这里给一个显眼的出口，把用户带到顶层窗口去录音。 */
+(function framedEscapeHint() {
+  if (!IS_FRAMED) return;
+  try { if (localStorage.getItem(PREFIX + "framedDismissed") === "1") return; } catch (e) {}
+
+  const bar = el("div", "framed-hint");
+  const text = el("span", "framed-hint-text");
+  text.innerHTML = DIRECT_HOST_URL
+    ? "🎤 <b>这里不能录音</b>　点右边用专用链接打开（可加到主屏幕）"
+    : "🎤 <b>录音需要在独立窗口打开</b>　嵌入页会被浏览器禁掉麦克风（跟手机设置无关）";
+  bar.appendChild(text);
+
+  const btn = el("button", "framed-hint-btn", DIRECT_HOST_URL ? "用专用链接打开" : "在新窗口打开");
+  btn.type = "button";
+  btn.addEventListener("click", () => { openStandalone(); });
+  bar.appendChild(btn);
+
+  const close = el("button", "framed-hint-close", "×");
+  close.type = "button";
+  close.setAttribute("aria-label", "不再提示");
+  close.addEventListener("click", () => {
+    bar.remove();
+    try { localStorage.setItem(PREFIX + "framedDismissed", "1"); } catch (e) {}
+  });
+  bar.appendChild(close);
+
+  const host = document.getElementById("root") || document.body;
+  host.appendChild(bar);
+})();
+
+    </script>
+  </body>
+</html>
